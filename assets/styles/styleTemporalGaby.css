@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navBar-products{
+    display: none;
+}
+.nav-bar-shopCart{
+    display: none;
+}
+.shopCart{
+    display: none;
+}
+.nav-footer{
+    display: none;
+}
