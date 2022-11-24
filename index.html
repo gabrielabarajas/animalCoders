@@ -9,31 +9,32 @@
 </head>
 <body>
     <div class = "nav-bar">
-        <img id="img-logo" src="./assets/imgs/pet-house.png" alt="Logotipo de la empresa" width="100px">
-        <img id="pg-main" src="./assets/imgs/pet-care.png" width="50px">
-        <img id="pg-main" src="./assets/imgs/cart.png" width="50px">
+        <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
+        <img id="pg-main" src="./assets/imgs/tienda.png" width="50px">
+        <img id="pg-cart" src="./assets/imgs/carro-de-la-carretilla.png" width="50px">
     </div>
     <div class="products">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Producto</h5>
-              <p class="card-text">Precio</p>
-              <button class="btn-add">Añadir a carrito</button>
-              <div class="ctn-buttons">
-                <button class="">-</button>
-                <input type="integer">
-                <button>+</button>
-                <button>trash</button> 
-              </div>
+        <h1>Productos destacados</h1>
+
+        <div class="crd-product">
+            <img id="img-product" src="" alt="imagen del producto">
+            <p id="txt-productName">Nombre del producto</p>
+            <p id="txt-price">Precio</p>
+            <button class="btn-action">Seleccionar</button>
+            <div id="btns-add">
+              <button class="btn-plusminus">-</button>
+              <input type="text">
+              <button class="btn-plusminus">+</button>
+              <button class="btn-action">Añadir al carrito</button>
             </div>
-          </div>
+        </div>
     </div>
+
     <div class="nav-footer">
-        <p>Copyright</p>
+        <p>Av. de Los Ladridos, 11. Barcelona</p>
+        <p>935 678 901</p>
     </div>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
