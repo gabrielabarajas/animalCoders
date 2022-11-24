@@ -53,5 +53,4 @@ productos = [
         title: "Duvo Plus Albornoz Perro Microfibra Azul",
         price: 20.92,
     },
-
 ]

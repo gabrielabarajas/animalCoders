@@ -1,6 +1,7 @@
-@import url("header.css");
-@import url("body.css");
-@import url("footer.css");
+@import url("./productsdesktop.css");
+@import url("./productsmobile.css");
+@import url("./shopcartdesktop.css");
+@import url("./shopcartmobile.css");
 
 *{
     margin: 0;
