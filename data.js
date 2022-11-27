@@ -1,4 +1,4 @@
-productos = [
+const productos = [
     {
         id: 0,
         image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
@@ -7,7 +7,7 @@ productos = [
     },
     {
         id: 1,
-        image: ":/https://static.miscota.com/media/1/photos/products/503053/OIeP-wZY-630f18d38916a_g.jpg",
+        image: "https://static.miscota.com/media/1/photos/products/503053/OIeP-wZY-630f18d38916a_g.jpg",
         title: "FuzzYard Sudadera Turtle Teddy Rosa para Perro",
         price: 21.24,
     },

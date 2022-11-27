@@ -27,7 +27,7 @@
             <img id="img-product" src="" alt="imagen del producto">
             <p id="txt-product-name">Nombre del producto</p>
             <p id="txt-price">Precio</p>
-            <button class="btn-action">Seleccionar</button>
+            <button class="btn-action" onclick="">Seleccionar</button>
             <div id="btns-add">
               <button class="btn-plusminus">-</button>
               <input type="text">
@@ -49,19 +49,7 @@
     <div id="products-mobile">
       <h1>Productos destacados</h1>
 <!-- Renderizado de productos mobile -->
-      <div class="crd-product-mobile">
-          <img id="img-product-mobile" src="" alt="imagen del producto">
-          <p id="txt-name-mobile">Nombre del producto</p>
-          <p id="txt-price-mobile">Precio</p>
-          <button class="btn-action-sel">Seleccionar</button>
-          <div id="btns-add-mobile">
-            <button class="btn-plusminus">-</button>
-            <input type="text">
-            <button class="btn-plusminus">+</button>
-            <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
-            <button class="btn-action-add">Añadir al carrito</button>
-          </div>
-      </div>
+ 
   </div>
 <!-- Container of Products for ShopCart  -->
   <div id="products-cart">
@@ -71,17 +59,17 @@
       <img id="img-product-cart" src="" alt="imagen del producto">
       <p id="txt-name-cart">Nombre del producto</p>
       <p id="txt-price-cart">Precio</p>
-      <button class="btn-action-sel">Seleccionar</button>
-      <div id="btns-add-cart">
+      <button class="btn-action">Seleccionar</button>
+      <div class="btns-selection">
         <button class="btn-plusminus">-</button>
         <input type="text">
         <button class="btn-plusminus">+</button>
         <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
-        <button class="btn-action-add">Añadir al carrito</button>
+        <button class="btn-action">Añadir al carrito</button>
       </div>
     </div>
   
-    <div id="btns-checkOut-cart">
+    <div id="btns-checkout-cart">
       <p id="txt-price-cart">Total <span>$</span></p>
       <button id="btn-vaciar-cart">Vaciar</button>
       <button id="btn-action-cart">Pagar</button>
