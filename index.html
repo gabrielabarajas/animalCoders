@@ -9,23 +9,23 @@
 </head>
 <body>
   <!-- Navigation bar for Desktop  -->
-    <div id = "navBar-products">
+    <div id = "nav-bar-desktop">
         <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
         <h1>Patitas Felices</h3>
         <h3>Tienda online de productos para perros y gatos.</h3>
-        <li class="navBar-products">
+        <li id="nav-bar-link">
           <ul id="lnk-products">Productos</ul>
           <ul id="lnk-shopCart">Carrito</ul>
         </li>
     </div>
 
     <!-- Container of Products for Desktop  -->
-    <div class="products">
+    <div id="products-desktop">
         <h1>Productos destacados</h1>
-
-        <div class="crd-product">
+    <!-- Renderizado de productos  -->
+        <div class="crd-product-desktop">
             <img id="img-product" src="" alt="imagen del producto">
-            <p id="txt-productName">Nombre del producto</p>
+            <p id="txt-product-name">Nombre del producto</p>
             <p id="txt-price">Precio</p>
             <button class="btn-action">Seleccionar</button>
             <div id="btns-add">
@@ -39,36 +39,56 @@
     </div>
 
 <!-- Navigation bar for Mobile  -->
-    <div class = "nav-bar-shopCart">
+    <div id = "nav-bar-mobile">
       <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
       <img id="pg-main" src="./assets/imgs/tienda.png" width="50px">
       <img id="pg-cart" src="./assets/imgs/carro-de-la-carretilla.png" width="50px">
     </div>
 
-<!-- Container of Products for Desktop  -->
-    <div class="shopCart">
-      <h1>Mi compra</h1>
-      <h3>Tienda online de productos para perros y gatos.</h3>
-
-      <div class="crd-product-shopCart">
-          <img id="img-product-shopCart" src="" alt="imagen del producto">
-          <p id="txt-productName-shopCart">Nombre del producto</p>
-          <p id="txt-price-shopCart">Precio</p>
-          <button class="btn-action">Seleccionar</button>
-          <div id="btns-add-shopCart">
+<!-- Container of Products for Mobile  -->
+    <div id="products-mobile">
+      <h1>Productos destacados</h1>
+<!-- Renderizado de productos mobile -->
+      <div class="crd-product-mobile">
+          <img id="img-product-mobile" src="" alt="imagen del producto">
+          <p id="txt-name-mobile">Nombre del producto</p>
+          <p id="txt-price-mobile">Precio</p>
+          <button class="btn-action-sel">Seleccionar</button>
+          <div id="btns-add-mobile">
             <button class="btn-plusminus">-</button>
             <input type="text">
             <button class="btn-plusminus">+</button>
             <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
-          </div>
-          <div id="btns-checkOut-shopCart">
-            <p id="txt-price-shopCart">Total <span>$</span></p>
-            <button id="btn-vaciar-shopCart">Vaciar</button>
-            <button id="btn-action-shopCart">Pagar</button>
+            <button class="btn-action-add">Añadir al carrito</button>
           </div>
       </div>
   </div>
+<!-- Container of Products for ShopCart  -->
+  <div id="products-cart">
+    <h1>Mi compra</h1>
+  <!-- Renderizado de productos carrito  -->
+    <div class="crd-product-cart">
+      <img id="img-product-cart" src="" alt="imagen del producto">
+      <p id="txt-name-cart">Nombre del producto</p>
+      <p id="txt-price-cart">Precio</p>
+      <button class="btn-action-sel">Seleccionar</button>
+      <div id="btns-add-cart">
+        <button class="btn-plusminus">-</button>
+        <input type="text">
+        <button class="btn-plusminus">+</button>
+        <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
+        <button class="btn-action-add">Añadir al carrito</button>
+      </div>
+    </div>
+  
+    <div id="btns-checkOut-cart">
+      <p id="txt-price-cart">Total <span>$</span></p>
+      <button id="btn-vaciar-cart">Vaciar</button>
+      <button id="btn-action-cart">Pagar</button>
+    </div>
 
+  </div>
+  
   <!-- Footer for Desktop and Mobile  -->
   <div class="nav-footer">
       <p>Av. de Los Ladridos, 11. Barcelona</p>
