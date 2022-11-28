@@ -9,15 +9,22 @@
 </head>
 <body>
   <!-- Navigation bar for Desktop  -->
-    <div id = "nav-bar-desktop">
-        <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
-        <h1>Patitas Felices</h3>
-        <h3>Tienda online de productos para perros y gatos.</h3>
-        <li id="nav-bar-link">
-          <ul id="lnk-products">Productos</ul>
-          <ul id="lnk-shopCart">Carrito</ul>
+    <header class="header-desktop">
+        <div  class="nav-bar-left">
+            <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
+            <div class="nav-bar-texto">
+                <h2></h2>
+                <h1>Patitas Felices</h1>
+                <h3>Tienda online de productos para perros y gatos</h3>
+            </div>
+        </div>
+        <li id="nav-bar-right">
+          <ul id="lnk-products">PRODUCTOS</ul>
+        
+          <ul id="lnk-shopcart">CARRITO</ul>
         </li>
-    </div>
+    </header>
+    
 
     <!-- Container of Products for Desktop  -->
     <div id="products-desktop">
@@ -78,10 +85,10 @@
   </div>
   
   <!-- Footer for Desktop and Mobile  -->
-  <div class="nav-footer">
+  <footer class="nav-footer">
       <p>Av. de Los Ladridos, 11. Barcelona</p>
       <p>935 678 901</p>
-  </div>
+  </footer>
 
     <script src="./data.js"></script>
     <script src="./app.js"></script>
