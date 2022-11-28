@@ -9,8 +9,7 @@ function renderProducts(){
         <div class="crd-product-mobile">
           <img id="img-product-mobile" src="${producto.image}" alt="${producto.title}">
           <p id="txt-name-mobile">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}</p>
-          <button class="btn-action" onclick ="selectProduct('${producto.id}')" >Seleccionar</button>
+          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
           <div class="btns-selection">
             <div class="ctn-selection">
               <button class="btn-plusminus">-</button>
