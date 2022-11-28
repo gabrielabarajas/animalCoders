@@ -53,4 +53,22 @@ const productos = [
         title: "Duvo Plus Albornoz Perro Microfibra Azul",
         price: 20.92,
     },
+    {
+        id: 9,
+        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
+        title: "Duvo Plus Albornoz Perro Microfibra Azul",
+        price: 20.92,
+    },
+    {
+        id: 10,
+        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
+        title: "Duvo Plus Albornoz Perro Microfibra Azul",
+        price: 20.92,
+    },
+    {
+        id: 11,
+        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
+        title: "Duvo Plus Albornoz Perro Microfibra Azul",
+        price: 20.92,
+    },
 ]
