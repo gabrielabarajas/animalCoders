@@ -2,9 +2,27 @@
 @import url("./productsmobile.css");
 @import url("./shopcartdesktop.css");
 @import url("./shopcartmobile.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+
+:root {
+    --background-color: #fff4ed; 
+    --light-blue: #595cae;
+    --dark-blue: #424478;
+    --dark-green: #6EC189;
+    --light-green: #DFFCAD; 
+}
+
+body {  
+    height: 100vh;
+    width: 100%;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
 }
