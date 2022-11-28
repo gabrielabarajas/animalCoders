@@ -1,0 +1,22 @@
+@media screen and(max-width:700px) {
+#nav-bar-desktop{
+    display: none;
+}
+#products-desktop{
+    display: none;
+}
+#products-cart{
+    display: none;
+}
+#nav-bar-mobile {
+    background-color: var(--light-green);
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#img-logo{
+    width: 7%;
+    height: 58%;
+}
+}
