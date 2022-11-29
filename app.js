@@ -11,14 +11,14 @@ function renderProducts(){
         <div class="crd-product-mobile">
           <img id="img-product-mobile" src="${producto.image}" alt="${producto.title}">
           <p id="txt-name-mobile">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
+          <p id="txt-price-mobile">${producto.price}<span> €</span></p>
           <div class="btns-selection">
             <div class="ctn-selection">
               <button class="btn-plusminus">-</button>
-              <input type="text">
+              <input type="text" size="3">
               <button class="btn-plusminus">+</button>
             </div>
-            <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
+            <img class="btn-trash"src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje">
             <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
           </div>
       </div>

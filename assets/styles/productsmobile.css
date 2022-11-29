@@ -1,5 +1,5 @@
-@media screen and (max-width:375px) {
-#nav-bar-desktop{
+@media screen and (min-width:360px) {
+.header-desktop{
     display: none;
 }
 #products-desktop{
@@ -59,25 +59,44 @@ h1{
 }
 
 #img-product-mobile{
-    width: 170px;
+    width: 250px;
     margin-top: 8%;
 }
 
 #txt-name-mobile{
     padding-top: 5%;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(80, 78, 78);
+    font-size: 2.5em;
     text-align: center;
     width: 66%;
 }
 
 #txt-price-mobile{
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 3em;
 }
 
-.btn-plusminus{
-    width: 2em;
+.btns-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.btn-plusminus{
+
+    border-radius: 10px;
+    background-color: var(--dark-green);
+    border-style: none;
+    font-size:6em;
+    
+}
+.btn-trash{
+    width: 50px;
+    padding: 1em;
+}
+
 
 }
