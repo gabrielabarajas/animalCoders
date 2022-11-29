@@ -86,13 +86,12 @@ h1{
     justify-content: center;
 }
 .btn-plusminus{
-
     border-radius: 10px;
     background-color: var(--dark-green);
     border-style: none;
     font-size:6em;
-    
 }
+
 .btn-trash{
     width: 50px;
     padding: 1em;
