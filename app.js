@@ -33,11 +33,12 @@ function renderProducts(){
               <button class="btn-plusminus">-</button>
               <input type="text">
               <button class="btn-plusminus">+</button>
-              <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
+              <button class="btn-plusminus">x</button>
               <button class="btn-action">Añadir al carrito</button>
             </div>
         </div>
         `
+        
     });
 }
 function selectProduct(id){

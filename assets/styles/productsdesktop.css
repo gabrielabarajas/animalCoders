@@ -30,13 +30,28 @@
     justify-self: start;
     align-self: center;
     font-size: 1.2rem;
+
 }
+
+
 /*-----------------------MAIN---------------------------*/
 h1{
     margin-top: 2rem;
 
 }
-
+#img-product{
+    height: auto;
+    width: 7rem;
+}
+#btns-add{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#products-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .btn-action {
 background-color: var(--dark-blue);
 border: none;
