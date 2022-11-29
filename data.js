@@ -71,4 +71,28 @@ const productos = [
         title: "Duvo Plus Albornoz Perro Microfibra Azul",
         price: 20.92,
     },
+    {
+        id: 12,
+        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
+        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        price: 5.49,
+    },
+    {
+        id: 13,
+        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
+        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        price: 5.49,
+    },
+    {
+        id: 14,
+        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
+        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        price: 5.49,
+    },
+    {
+        id: 15,
+        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
+        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        price: 5.49,
+    },
 ]

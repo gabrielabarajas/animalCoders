@@ -1,4 +1,6 @@
 const elemProducts = document.querySelector("#products-mobile");
+const elemProductsDesk = document.querySelector("#products-desktop");
+
 const buttonsSelection = document.querySelector(".btns-selection");
 let quantitySel = 0;
 let cart = [];
@@ -20,6 +22,21 @@ function renderProducts(){
             <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
           </div>
       </div>
+        `
+      elemProductsDesk.innerHTML += `
+      <div class="crd-product-desktop">
+            <img id="img-product" src="${producto.image}" alt="${producto.title}">
+            <p id="txt-product-name">${producto.title}</p>
+          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
+          <p id="txt-price"></p>
+            <div id="btns-add">
+              <button class="btn-plusminus">-</button>
+              <input type="text">
+              <button class="btn-plusminus">+</button>
+              <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
+              <button class="btn-action">Añadir al carrito</button>
+            </div>
+        </div>
         `
     });
 }
