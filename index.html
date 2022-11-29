@@ -51,19 +51,20 @@
  
   </div>
 <!-- Container of Products for ShopCart Mobile and Desktop  -->
-  <div id="products-cart">git
+  <div id="products-cart">
     <h1>Mi compra</h1>
   <!-- Renderizado de productos carrito  -->
     <div class="crd-product-cart">
       <img id="img-product-cart" src="" alt="imagen del producto">
       <p id="txt-name-cart">Nombre del producto</p>
       <p id="txt-price-cart">Precio</p>
-      <button class="btn-action">Seleccionar</button>
-      <div class="btns-selection">
-        <button class="btn-plusminus">-</button>
-        <input type="text">
-        <button class="btn-plusminus">+</button>
-        <img src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje" width="30px">
+      <div id="btns-add">
+        <div class="select-quantity">
+            <button class="btn-plusminus">-</button>
+            <input type="text">
+            <button class="btn-plusminus">+</button>
+        </div>
+        <button class="btn-plusminus">x</button>
         <button class="btn-action">Añadir al carrito</button>
       </div>
     </div>
