@@ -1,0 +1,65 @@
+const elemProducts = document.querySelector("#products-mobile");
+const elemProductsDesk = document.querySelector("#products-desktop");
+
+const buttonsSelection = document.querySelector(".btns-selection");
+let quantitySel = 0;
+let cart = [];
+
+function renderProducts(){
+    productos.forEach((producto) => {
+        elemProducts.innerHTML += `
+        <div class="crd-product-mobile">
+          <img id="img-product-mobile" src="${producto.image}" alt="${producto.title}">
+          <p id="txt-name-mobile">${producto.title}</p>
+          <p id="txt-price-mobile">${producto.price}<span> €</span></p>
+          <div class="btns-selection">
+            <div class="ctn-selection">
+              <button class="btn-plusminus">-</button>
+              <input type="text" size="3">
+              <button class="btn-plusminus">+</button>
+            </div>
+            <img class="btn-trash"src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje">
+            <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
+          </div>
+      </div>
+        `
+      elemProductsDesk.innerHTML += `
+      <div class="crd-product-desktop">
+            <img id="img-product" src="${producto.image}" alt="${producto.title}">
+            <p id="txt-product-name">${producto.title}</p>
+          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
+          <p id="txt-price"></p>
+            <div id="btns-add">
+              <button class="btn-plusminus">-</button>
+              <input type="text">
+              <button class="btn-plusminus">+</button>
+              <button class="btn-plusminus">x</button>
+              <button class="btn-action">Añadir al carrito</button>
+            </div>
+        </div>
+        `
+        
+    });
+}
+function selectProduct(id){
+  console.log();
+  //document.querySelector(".btns-selection").style.display = "block";
+  let cantidad = prompt("¿Cuántas unidades desea añadir?", "1");
+  console.log(id);
+  console.log(cantidad);
+}
+
+function increaseProduct(){
+
+}
+
+function decreaseProduct(){
+  
+}
+
+function addToCart(id){
+  const articulo = productos.find((producto)=> producto.id === id);
+  console.log(articulo);
+}
+
+renderProducts();
