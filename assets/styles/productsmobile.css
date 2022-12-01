@@ -78,7 +78,15 @@
         font-weight: bold;
         font-size: 3em;
     }
+    .quantity-products{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+    }
     
+    input[type='number']{
+        width: 80px;
+    }
+
     .btns-selection{
         display: flex;
         flex-direction: column;
