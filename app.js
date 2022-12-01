@@ -48,6 +48,12 @@ function isInCart(indexProduct){
 }
 
 function addToCart(indexProduct){
+let index = indexProduct;
+let value = document.getElementById(indexProduct).value;
+
+document.cookie = "indexProduct=" + encodeURIComponent(index);
+document.cookie = "valueProduct=" + encodeURIComponent(value);
+
 console.log(indexProduct);
 console.log(document.getElementById(indexProduct).value);
 }
