@@ -24,14 +24,6 @@
           <ul id="lnk-shopcart">CARRITO</ul>
         </li>
     </header>
-    
-
-    <!-- Container of Products for Desktop  -->
-    <div id="products-desktop">
-        <h3>Productos destacados</h3>
-    <!-- Renderizado de productos  -->
-        
-    </div>
 
 <!-- Navigation bar for Mobile  -->
     <div id = "nav-bar-mobile">
@@ -46,11 +38,32 @@
       <p id="txt-slogan">Tienda online de productos para perros y gatos</p>
     </div>
 
-<!-- Container of Products for Mobile  -->
-    <div id="products-mobile">
-      <h1>Productos destacados</h1>
+<!-- Container of Products for ShopCart Mobile and Desktop  -->
+  <div id="products-cart">
+    <h1>Mi compra</h1>
+  <!-- Renderizado de productos carrito  -->
+    <div class="crd-product-cart">
+      <img id="img-product-cart" src="" alt="imagen del producto">
+      <p id="txt-name-cart">Nombre del producto</p>
+      <p id="txt-price-cart">Precio</p>
+      <div id="btns-add">
+        <div class="select-quantity">
+            <button class="btn-plusminus">-</button>
+            <input type="text">
+            <button class="btn-plusminus">+</button>
+        </div>
+        <button class="btn-plusminus">x</button>
+        <button class="btn-action">Añadir al carrito</button>
+      </div>
+    </div>
+  
+    <div id="btns-checkout-cart">
+      <p id="txt-price-cart">Total <span>$</span></p>
+      <button id="btn-vaciar-cart">Vaciar</button>
+      <button id="btn-action-cart">Pagar</button>
     </div>
 
+  </div>
   
   <!-- Footer for Desktop and Mobile  -->
   <footer class="nav-footer">

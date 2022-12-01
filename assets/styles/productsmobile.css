@@ -5,9 +5,6 @@
     #products-desktop{
         display: none;
     }
-    #products-cart{
-        display: none;
-    }
     #nav-bar-mobile {
         background-color: var(--light-green);
         height: 10%;
