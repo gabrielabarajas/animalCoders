@@ -1,4 +1,4 @@
-@media screen and (max-width:992px) {
+@media screen and (min-width:360px) {
     .header-desktop{
         display: none;
     }
