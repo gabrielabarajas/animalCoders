@@ -7,22 +7,23 @@ let cart = [];
 
 function renderProducts(){
     productos.forEach((producto) => {
-        elemProducts.innerHTML += `
+      // ------------ Renderiza productos MOBILE ------------------  
+      elemProducts.innerHTML += `
         <div class="crd-product-mobile">
-          <img id="img-product-mobile" src="${producto.image}" alt="${producto.title}">
-          <p id="txt-name-mobile">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}<span> €</span></p>
+          <img class="img-product-mobile" src="${producto.image}" alt="${producto.title}">
+          <p class="txt-name-mobile">${producto.title}</p>
+          <p class="txt-price-mobile">${producto.price}<span> €</span></p>
           <div class="btns-selection">
             <div class="ctn-selection">
-              <button class="btn-plusminus">-</button>
-              <input type="text" size="3">
-              <button class="btn-plusminus">+</button>
+              <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
+              <input id = "${producto.id}" class ="quantity-products" type="number" value= 1 min=1>
+              <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
-            <img class="btn-trash"src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje">
             <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
           </div>
       </div>
         `
+        // Renderiza productos DESKTOP 
       elemProductsDesk.innerHTML += `
       <div class="crd-product-desktop">
             <img id="img-product" src="${producto.image}" alt="${producto.title}">
@@ -38,23 +39,21 @@ function renderProducts(){
             </div>
         </div>
         `
-        
     });
 }
 function selectProduct(id){
-  console.log();
-  //document.querySelector(".btns-selection").style.display = "block";
-  let cantidad = prompt("¿Cuántas unidades desea añadir?", "1");
-  console.log(id);
-  console.log(cantidad);
-}
-
-function increaseProduct(){
 
 }
 
-function decreaseProduct(){
-  
+function increaseProduct(indexProduct){
+  document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
+}
+
+function decreaseProduct(indexProduct){
+    document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) - 1 ;
+    if (document.getElementById(indexProduct).value <= 0){
+      document.getElementById(indexProduct).value = 1
+    }
 }
 
 function addToCart(id){

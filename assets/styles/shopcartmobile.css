@@ -1,0 +1,16 @@
+@media screen and (max-width:992px) {
+    .header-desktop{
+        display: none;
+    }
+    #products-desktop{
+        display: none;
+    }
+   /* #products-mobile{
+        display: none;
+    }*/
+/*____________HEADER_______________*/
+
+/*____________MAIN_______________*/
+
+/*____________FOOTER_______________*/
+}
