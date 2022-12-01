@@ -19,9 +19,9 @@
         height: 58%;
         margin-top: 6%;
     }
-    #pg-main, #pg-cart{
-        width: 7%;
-        margin-top: 6%;
+    #pg-cart{
+        border-style: none;
+        background-color: var(--light-green);
     }
     #txt-patitas{
         font-family: 'Roboto', sans-serif;
