@@ -19,9 +19,9 @@
         height: 58%;
         margin-top: 6%;
     }
-    #pg-main, #pg-cart{
-        width: 7%;
-        margin-top: 6%;
+    #pg-cart{
+        border-style: none;
+        background-color: var(--light-green);
     }
     #txt-patitas{
         font-family: 'Roboto', sans-serif;
@@ -58,13 +58,13 @@
         flex-direction: column;
     }
     
-    #img-product-mobile{
+    .img-product-mobile{
         width: 250px;
         margin-top: 8%;
     }
     
-    #txt-name-mobile{
-        padding-top: 5%;
+    .txt-name-mobile{
+        padding-top: 6%;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         color: rgb(80, 78, 78);
@@ -73,30 +73,60 @@
         width: 66%;
     }
     
-    #txt-price-mobile{
+    .txt-price-mobile{
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         font-size: 3em;
     }
+    .quantity-products{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+    }
     
+    input[type='number']{
+        width: 80px;
+    }
+
     .btns-selection{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .btn-plusminus{
+    .num-products{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        width: 3em;
+    }
     
-        border-radius: 10px;
+    .ctn-selection{
+        display:flex;
+    }
+
+    .btn-plusminus{
         background-color: var(--dark-green);
-        border-style: none;
-        font-size:6em;
-        
+        border-radius: 15px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        color: white;
+        font-size: 2.5em;
     }
     .btn-trash{
         width: 50px;
         padding: 1em;
     }
     
+    .btn-action{
+        background-color: var(--dark-green);
+        border-radius: 15px;
+        padding: 1em;
+        border: none;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 500;
+        margin-top: 2em;
+    }
     
     }
