@@ -25,14 +25,15 @@
     justify-self:end;
     align-self: center;
     font-size: 1.2rem ;
+    
 }
+
 #lnk-shopcart{
     justify-self: start;
     align-self: center;
     font-size: 1.2rem;
 
 }
-
 
 /*-----------------------MAIN---------------------------*/
 h1{
