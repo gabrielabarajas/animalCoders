@@ -1,8 +1,8 @@
 const productos = [
     {
         id: 0,
-        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
-        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        image: "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_468,w_500/c_pad,h_468,w_500/l_sale-badge,fl_relative,w_0.12,g_north_west,e_sharpen/l_bypetco-badge,fl_relative,w_0.20,g_south_east,e_sharpen/3396557-center-1",
+        title: "More and Merrier Pickles Cat Toy, Pack of 2",
         price: 5.49,
     },
     {
@@ -13,14 +13,14 @@ const productos = [
     },
     {
         id: 2,
-        image: "https://static.miscota.com/media/1/photos/products/109518/protector-solar-para-gatos-60ml-62a73d651f4f1_g.png",
-        title: "Men For San Protector Solar 30+ para Perros y Gatos",
+        image: "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_468,w_500/c_pad,h_468,w_500/l_sale-badge,fl_relative,w_0.12,g_north_west,e_sharpen/l_bypetco-badge,fl_relative,w_0.20,g_south_east,e_sharpen/3602411-center-10",
+        title: "More and Merrier Cozy Fairisle Tunnel Cat Toy",
         price: 11.16,
     },
     {
         id: 3,
-        image: "https://static.miscota.com/media/1/photos/products/114675/114675-lubrithal_1_g.jpg",
-        title: "Dechra Crema Hidratante Ocular Lubrithal",
+        image: "https://tractive.com/assets/image/dpr_2,w_1200/shop-frontend/pages/product-detail-page/product-hero/product-images/trnjabl/tractive-gps-dog-4-blue-packaging-es.webp",
+        title: "Localizador GPS para perros",
         price: 16.95,
     },    
     {
@@ -31,8 +31,8 @@ const productos = [
     },    
     {
         id: 5,
-        image: "https://static.miscota.com/media/1/photos/products/070368/70368-75653-75653-as00237-1-1-1_1_g.jpg",
-        title: "Chien Chic Perfume Melocoton - Spray",
+        image: "https://m.media-amazon.com/images/I/71i87T0k44L._AC_SX679_.jpg",
+        title: "Sanicat Active Arena De Gato, Ultra Aglomerante, Aroma de Flor de Loto, 6L",
         price: 12.79,
     },
     {
@@ -55,9 +55,9 @@ const productos = [
     },
     {
         id: 9,
-        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
-        title: "Duvo Plus Albornoz Perro Microfibra Azul",
-        price: 20.92,
+        image: "https://m.media-amazon.com/images/I/61nz0M6JqtL._AC_SX679_.jpg",
+        title: "PETKIT Pura X Caja de Arena Intelligent autolimpiable, XSecure/Eliminación de olores/Control de App, Caja de Arena automática Buena para Varios Gatos",
+        price: 200.92,
     },
     {
         id: 10,
@@ -67,8 +67,8 @@ const productos = [
     },
     {
         id: 11,
-        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
-        title: "Duvo Plus Albornoz Perro Microfibra Azul",
+        image: "https://m.media-amazon.com/images/I/61dR+sm-RGL._AC_SX679_.jpg",
+        title: "PETKIT Mochila para Gatos, Mochila de Viaje para Cachorros, Ventilador Incorporado y Sistema de iluminación, Mochila para Transporte de Mascotas Bien Ventilada, Ligera y Cómoda (Verde)",
         price: 20.92,
     },
     {
