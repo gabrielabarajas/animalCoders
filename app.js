@@ -19,7 +19,6 @@ function renderProducts(){
               <input id = "${producto.id}" class ="quantity-products" type="number" value= 1 min=1>
               <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
-            <img class="btn-trash"src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje">
             <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
           </div>
       </div>
