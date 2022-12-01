@@ -61,8 +61,8 @@ const productos = [
     },
     {
         id: 10,
-        image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
-        title: "Duvo Plus Albornoz Perro Microfibra Azul",
+        image: "https://m.media-amazon.com/images/I/719DcxvJqZL._AC_SX679_.jpg",
+        title: "Cuello protector hinchable para perros y gatos. De tacto suave y con hebilla ajustable.",
         price: 20.92,
     },
     {
@@ -73,26 +73,26 @@ const productos = [
     },
     {
         id: 12,
-        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
-        title: "KONG Juguete Mordedor Squeez Jels para Perros",
+        image: "https://m.media-amazon.com/images/I/61ZEISQCcJS._AC_SX679_.jpg",
+        title: "CAT DANCER Juguete",
         price: 5.49,
     },
     {
         id: 13,
-        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
-        title: "KONG Juguete Mordedor Squeez Jels para Perros",
-        price: 5.49,
+        image: "https://cdn.shopify.com/s/files/1/1511/7434/products/tuft-paw-milo-cat-tree-2_f1257422-e1e7-45d8-ac8d-f332f60f607d.jpg?crop=center&height=540&v=1610405756&width=540",
+        title: "Milo Cat Tree",
+        price: 500.49,
     },
     {
         id: 14,
-        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
-        title: "KONG Juguete Mordedor Squeez Jels para Perros",
-        price: 5.49,
+        image: "https://www.catastrophicreations.com/wp-content/uploads/2015/06/LR11NANT_GalleryWCat2_DelRaceway_1500x1000.jpg",
+        title: "Deluxe Raceway Cat Hammock",
+        price: 125.50,
     },
     {
         id: 15,
-        image: "https://static.miscota.com/media/1/photos/products/129671/PSJ1AE-4-20190513-20190513214005-20190513214406-1000x1000-6284fee971101_g.jpg",
-        title: "KONG Juguete Mordedor Squeez Jels para Perros",
-        price: 5.49,
+        image: "https://people.com/thmb/z94KWXNj_HBT596Ap2jQJ3peqiU=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(877x0:879x2):format(webp)/PetAwards_25-a5500713802148d59d882dcd0e8ac6c7.jpg",
+        title: "Whistle GO Explore GPS Tracker",
+        price: 150.20,
     },
 ]
