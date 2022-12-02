@@ -19,7 +19,7 @@ function renderProducts(){
               <input id = "${producto.id}" class ="quantity-products" type="number" value= 1 min=1>
               <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
-            <button class="btn-action" onclick ="addToCart(${producto.id})">Añadir al carrito</button>
+            <button class="btn-action" onclick ="addInfo(${producto.id})">Añadir al carrito</button>
           </div>
       </div>
         `
@@ -42,32 +42,39 @@ function renderProducts(){
     });
 }
 
+function increaseProduct(indexProduct){
+  document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
+}
+
+function decreaseProduct(indexProduct){
+    document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) - 1 ;
+    if (document.getElementById(indexProduct).value <= 0){
+      document.getElementById(indexProduct).value = 1
+    }
+}
+
+function addInfo(indexProduct){
+  let index = indexProduct;
+  let value = document.getElementById(indexProduct).value;
+  //Guardar en array
+  cart.push(index,value)
+  console.log(cart);
+  //Guardar en cookie
+  document.cookie = "indexProduct=" + encodeURIComponent(index);
+  document.cookie = "valueProduct=" + encodeURIComponent(value);
+  console.log(document.cookie);
+  //Guardar en localstorage
+  localStorage.setItem("data",cart);
+  }
+
 function isInCart(indexProduct){
   let result = cart.some(productoSel => productoSel.id === indexProduct);
  return result
 }
 
-function addToCart(indexProduct){
-let index = indexProduct;
-let value = document.getElementById(indexProduct).value;
-
-document.cookie = "indexProduct=" + encodeURIComponent(index);
-document.cookie = "valueProduct=" + encodeURIComponent(value);
-
-console.log(indexProduct);
-console.log(document.getElementById(indexProduct).value);
+function addToCart(cart){
+  //window.open("./cart.html");
+  //console.log(document.cookie)
 }
 
-function increaseProduct(indexProduct){
-  document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
-  console.log(document.getElementById(indexProduct).value);
-}
-
-function decreaseProduct(indexProduct){
-    document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) - 1 ;
-    console.log(document.getElementById(indexProduct).value);
-    if (document.getElementById(indexProduct).value <= 0){
-      document.getElementById(indexProduct).value = 1
-    }
-}
 renderProducts();
