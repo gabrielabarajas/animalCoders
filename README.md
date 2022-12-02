@@ -2,7 +2,9 @@
  
 Las Animal coders hemos creado un e-commerce especializado en productos para perros y gatos.
  
-En la tienda online podemos mostrar los productos y añadirlos a un carrito de compra.   
+En la tienda online podemos mostrar los productos y añadirlos a un carrito de compra.
+
+La tienda está dirigida a los afortunados que comparten su vida con un perritos y gatitos.
 ​
 ​ 
 ## :clipboard: Descripción del proyecto 
