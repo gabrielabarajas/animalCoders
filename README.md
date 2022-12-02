@@ -14,7 +14,7 @@ En la tienda online podemos mostrar los productos y añadirlos a un carrito de c
   ​
 ## :writing_hand: Referencia gráfica del diseño atómico
 ​
-![Atomic Design](https://i.ibb.co/7RNFKtW/atomic.png)
+![Atomic Design](https://i.ibb.co/H42YfV7/patitasfinal.png)   
 ​
 ## :iphone: Referencia gráfica del diseño movil
 ​
@@ -22,8 +22,7 @@ En la tienda online podemos mostrar los productos y añadirlos a un carrito de c
 ​ 
 # :computer: Referencia gráfica del diseño desktop
 ​
-![Desktop](https://i.ibb.co/x6rsKSr/desktop.png)
-​
+![Desktop](https://i.ibb.co/H42YfV7/patitasfinal.png)   
 ​
 ## :hammer_and_wrench: Herramientas
 - Figma
@@ -37,7 +36,7 @@ En la tienda online podemos mostrar los productos y añadirlos a un carrito de c
 - Javascript  
    
 ## :flashlight: Temas
-* [x] - Atomic Design  
+* [x] Atomic Design  
 * [x] Responsive design  (Html - Css)
 * [x] Pseudoclases  (Css)
 * [x] Box Model (Html - Css)
@@ -57,11 +56,11 @@ En la tienda online podemos mostrar los productos y añadirlos a un carrito de c
 ​
 ## :raising_hand_woman:Authors
 ​
-- [@gabrielabarajas](https://github.com/gabrielabarajas)
-- [@magswer](https://github.com/magswer)
-- [@marchuovi](https://github.com/marchuovi)
-- [@SILLUCERO](https://github.com/SILLUCERO)
-- :pisces:[@bgiudicid](https://github.com/bgiudicid)  
+- :virgo: [@gabrielabarajas](https://github.com/gabrielabarajas)
+- :pisces: [@magswer](https://github.com/magswer)
+- :libra: [@marchuovi](https://github.com/marchuovi)
+- :leo: [@SILLUCERO](https://github.com/SILLUCERO)
+- :pisces: [@bgiudicid](https://github.com/bgiudicid)  
    
     ​​
 ## Acknowledgements
