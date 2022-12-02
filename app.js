@@ -3,7 +3,7 @@ const elemProductsDesk = document.querySelector("#products-desktop");
 
 const buttonsSelection = document.querySelector(".btns-selection");
 let quantitySel = 0;
-let cart = [];
+const cart = [];
 
 function renderProducts(){
     productos.forEach((producto) => {
@@ -54,17 +54,14 @@ function decreaseProduct(indexProduct){
 }
 
 function addInfo(indexProduct){
-  let index = indexProduct;
-  let value = document.getElementById(indexProduct).value;
-  //Guardar en array
-  cart.push(index,value)
-  console.log(cart);
-  //Guardar en cookie
-  document.cookie = "indexProduct=" + encodeURIComponent(index);
-  document.cookie = "valueProduct=" + encodeURIComponent(value);
-  console.log(document.cookie);
-  //Guardar en localstorage
-  localStorage.setItem("data",cart);
+    let index = indexProduct;
+    let value = document.getElementById(indexProduct).value;
+    //Guardar en array
+    cart.push(index,value);
+    console.log(cart);
+    //Guardar en localstorage
+    localStorage.setItem("data",cart);
+  return cart;
   }
 
 function isInCart(indexProduct){
@@ -72,9 +69,13 @@ function isInCart(indexProduct){
  return result
 }
 
-function addToCart(cart){
-  //window.open("./cart.html");
-  //console.log(document.cookie)
+function addToCart(){
+  let carrito = localStorage.getItem("data");
+  console.log(carrito);
+}
+
+function renderCart(cart){
+
 }
 
 renderProducts();
