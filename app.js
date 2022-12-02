@@ -3,7 +3,7 @@ const elemProductsDesk = document.querySelector("#products-desktop");
 
 const buttonsSelection = document.querySelector(".btns-selection");
 let quantitySel = 0;
-let cart = [];
+const cart = [];
 
 function renderProducts(){
     productos.forEach((producto) => {
@@ -63,7 +63,7 @@ function addInfo(indexProduct){
   document.cookie = "indexProduct=" + encodeURIComponent(index);
   document.cookie = "valueProduct=" + encodeURIComponent(value);
   console.log(document.cookie);
-  //Guardar en localstoragetwopages
+  //Guardar en localstorage
   localStorage.setItem("data",cart);
   }
 
@@ -72,9 +72,13 @@ function isInCart(indexProduct){
  return result
 }
 
-function addToCart(cart){
-  //window.open("./cart.html");
-  //console.log(document.cookie)
+function addToCart(){
+  let carrito = localStorage.getItem("data");
+  console.log(carrito);
+}
+
+function renderCart(cart){
+
 }
 
 renderProducts();
