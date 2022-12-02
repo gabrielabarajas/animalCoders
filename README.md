@@ -38,7 +38,7 @@ En la tienda online podemos mostrar los productos y añadirlos a un carrito de c
 ## :flashlight: Temas
 * [x] Atomic Design  
 * [x] Responsive design  (Html - Css)
-* [x] Pseudoclases  (Css)
+* [ ] Pseudoclases  (Css)
 * [x] Box Model (Html - Css)
 * [x] Events and event Handler (Javascript)
 * [x] Funciones (Javascript)
