@@ -63,7 +63,7 @@ function addInfo(indexProduct){
   document.cookie = "indexProduct=" + encodeURIComponent(index);
   document.cookie = "valueProduct=" + encodeURIComponent(value);
   console.log(document.cookie);
-  //Guardar en localstorage
+  //Guardar en localstoragetwopages
   localStorage.setItem("data",cart);
   }
 
