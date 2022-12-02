@@ -3,7 +3,7 @@ const elemProductsDesk = document.querySelector("#products-desktop");
 
 const buttonsSelection = document.querySelector(".btns-selection");
 let quantitySel = 0;
-const cart = [];
+const cart =[];
 
 function renderProducts(){
     productos.forEach((producto) => {
@@ -56,16 +56,10 @@ function decreaseProduct(indexProduct){
 function addInfo(indexProduct){
   let index = indexProduct;
   let value = document.getElementById(indexProduct).value;
-  //Guardar en array
-  cart.push(index,value)
-  console.log(cart);
-  //Guardar en cookie
-  document.cookie = "indexProduct=" + encodeURIComponent(index);
-  document.cookie = "valueProduct=" + encodeURIComponent(value);
-  console.log(document.cookie);
   //Guardar en localstorage
+  cart.push(index,value);
   localStorage.setItem("data",cart);
-  }
+}
 
 function isInCart(indexProduct){
   let result = cart.some(productoSel => productoSel.id === indexProduct);
@@ -78,7 +72,6 @@ function addToCart(){
 }
 
 function renderCart(cart){
-
 }
 
 renderProducts();
