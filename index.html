@@ -49,8 +49,35 @@
 <!-- Container of Products for Mobile  -->
     <div id="products-mobile">
       <h1>Productos destacados</h1>
+<!-- Renderizado de productos mobile -->
+ 
+  </div>
+<!-- Container of Products for ShopCart Mobile and Desktop  -->
+  <div id="products-cart">
+    <h1>Mi compra</h1>
+  <!-- Renderizado de productos carrito  -->
+    <div class="crd-product-cart">
+      <img id="img-product-cart" src="" alt="imagen del producto">
+      <p id="txt-name-cart">Nombre del producto</p>
+      <p id="txt-price-cart">Precio</p>
+      <div id="btns-add">
+        <div class="select-quantity">
+            <button class="btn-plusminus">-</button>
+            <input type="text">
+            <button class="btn-plusminus">+</button>
+        </div>
+        <button class="btn-plusminus">x</button>
+        <button class="btn-action">Añadir al carrito</button>
+      </div>
+    </div>
+  
+    <div id="btns-checkout-cart">
+      <p id="txt-price-cart">Total <span>$</span></p>
+      <button id="btn-vaciar-cart">Vaciar</button>
+      <button id="btn-action-cart">Pagar</button>
     </div>
 
+  </div>
   
   <!-- Footer for Desktop and Mobile  -->
   <footer class="nav-footer">
