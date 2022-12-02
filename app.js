@@ -61,7 +61,6 @@ function addInfo(indexProduct){
     console.log(cart);
     //Guardar en localstorage
     localStorage.setItem("data",cart);
-  return cart;
   }
 
 function isInCart(indexProduct){
