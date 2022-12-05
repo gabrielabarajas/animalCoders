@@ -53,12 +53,16 @@ function decreaseProduct(indexProduct){
     }
 }
 
-function addInfo(indexProduct){
-  let index = indexProduct;
-  let value = document.getElementById(indexProduct).value;
+function addInfo(productId){
+  let value = document.getElementById(productId).value;
   //Guardar en localstorage
-  cart.push(index,value);
+  const productSel = productos.find((producto)=> producto.id === productId );
+  cart.push({
+    ...productSel,
+    unidades: value,
+  })
   localStorage.setItem("data",cart);
+  console.log(cart);
 }
 
 function isInCart(indexProduct){
