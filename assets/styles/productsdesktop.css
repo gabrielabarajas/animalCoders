@@ -1,4 +1,5 @@
-
+@media screen and (min-width: 992px) {
+    
    /*--------------------------HEADER------------------------------*/
 .header-desktop{
     list-style: none;
@@ -88,3 +89,4 @@ display: none;
     p {
         margin-bottom: 0; 
     }
+}
