@@ -63,7 +63,7 @@ function addInfo(productId){
     ...productSel,
     unidades: value,
   })
-  localStorage.setItem("data",cart);
+  localStorage.setItem("data",JSON.stringify(cart));
   console.log(cart);
 }
 
