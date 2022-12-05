@@ -8,7 +8,7 @@ const productos = [
     {
         id: 1,
         image: "https://static.miscota.com/media/1/photos/products/503053/OIeP-wZY-630f18d38916a_g.jpg",
-        title: "FuzzYard sudadera rosa para perro",
+        title: "FuzzYard sudadera rosa para perros",
         price: 21.24,
     },
     {
