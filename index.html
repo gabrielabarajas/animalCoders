@@ -65,7 +65,7 @@
       <div id="btns-add">
         <div class="select-quantity">
             <button class="btn-plusminus">-</button>
-            <input type="text">
+            <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
             <button class="btn-plusminus">+</button>
         </div>
         <button class="btn-plusminus">x</button>
@@ -74,7 +74,7 @@
     </div>
   
     <div id="btns-checkout-cart">
-      <p id="txt-price-cart">Total <span>$</span></p>
+      <p id="txt-price-cart">Total <span>€</span></p>
       <button id="btn-vaciar-cart">Vaciar</button>
       <button id="btn-action-cart">Pagar</button>
     </div>

@@ -33,7 +33,7 @@ function renderProducts(){
           <p id="txt-price"></p>
             <div id="btns-add">
               <button class="btn-plusminus">-</button>
-              <input type="text">
+              <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
               <button class="btn-plusminus">+</button>
               <button class="btn-plusminus">x</button>
               <button class="btn-action">Añadir al carrito</button>
