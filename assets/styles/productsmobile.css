@@ -12,14 +12,20 @@
     #crd-product-cart {
         display: none;
     }
+
+    #p-destacados {
+        display: none;
+    }
+
     #nav-bar-mobile {
         background-color: var(--light-green);
-        height: 18%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-content: center;
-
+        padding: 15px;
     }
+
     #img-logo{
         width: auto;
         height: 4rem;
@@ -59,7 +65,7 @@
     #bg-slogan{
 
         background-color: var(--dark-green);
-        height: 16%;
+        height: 8%;
     }
     
     h1{
