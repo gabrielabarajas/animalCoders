@@ -16,10 +16,11 @@ function renderProducts(){
           <div class="btns-selection">
             <div class="ctn-selection">
               <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
-              <input id = "${producto.id}" class ="quantity-products" type="number" value= 1 min=1>
+              <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
               <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
             <button class="btn-action" onclick ="addInfo(${producto.id})">Añadir al carrito</button>
+            <p id = "txt-msg-usuario">mensaje</p>
           </div>
       </div>
         `
@@ -36,6 +37,7 @@ function renderProducts(){
               <button class="btn-plusminus">+</button>
               <button class="btn-plusminus">x</button>
               <button class="btn-action">Añadir al carrito</button>
+              <p id = "txt-msg-usuario">mensaje</p>
             </div>
         </div>
         `
@@ -49,7 +51,7 @@ function increaseProduct(indexProduct){
 function decreaseProduct(indexProduct){
     document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) - 1 ;
     if (document.getElementById(indexProduct).value <= 0){
-      document.getElementById(indexProduct).value = 1
+      document.getElementById(indexProduct).value = 0
     }
 }
 
