@@ -16,7 +16,7 @@ function renderProducts(){
           <div class="btns-selection">
             <div class="ctn-selection">
               <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
-              <input type="number" id = "${producto.id}" class ="quantity-products" type="number" value = 0 placeholder="0">
+              <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
               <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
             <button class="btn-action" onclick ="addInfo(${producto.id})">Añadir al carrito</button>
@@ -33,7 +33,7 @@ function renderProducts(){
           <p id="txt-price"></p>
             <div id="btns-add">
               <button class="btn-plusminus">-</button>
-              <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
+              <input type="text">
               <button class="btn-plusminus">+</button>
               <button class="btn-plusminus">x</button>
               <button class="btn-action">Añadir al carrito</button>
@@ -45,10 +45,7 @@ function renderProducts(){
 }
 
 function increaseProduct(indexProduct){
-  //console.log(indexProduct);
-  //console.log(document.getElementById(indexProduct).value);
   document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
-  console.log(document.getElementById(indexProduct).value);
 }
 
 function decreaseProduct(indexProduct){
@@ -56,33 +53,23 @@ function decreaseProduct(indexProduct){
     if (document.getElementById(indexProduct).value <= 0){
       document.getElementById(indexProduct).value = 0
     }
-    console.log(document.getElementById(indexProduct).value);
-}
-
-/*function isInCart(productId){
-  let result = cart.some(productoSel => productoSel.id === productId);
-  console.log(result);
- return result
-}
-
-function addQuantity(productSel){
-  productSel.units = productSel.units + 1;
 }
 
 function addInfo(productId){
   let value = document.getElementById(productId).value;
+  //Guardar en localstorage
   const productSel = productos.find((producto)=> producto.id === productId );
-if (isInCart(productId)){
-  addQuantity(productSel);
-}else {
-   cart.push({
+  cart.push({
     ...productSel,
-    units: value,
+    unidades: value,
   })
-  localStorage.setItem("data",JSON.stringify(cart));
-  console.log(cart); 
+  localStorage.setItem("data",cart);
+  console.log(cart);
 }
 
+function isInCart(indexProduct){
+  let result = cart.some(productoSel => productoSel.id === indexProduct);
+ return result
 }
 
 function addToCart(){
@@ -92,6 +79,5 @@ function addToCart(){
 
 function renderCart(cart){
 }
-*/
 
 renderProducts();
