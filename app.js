@@ -1,6 +1,7 @@
 const elemProducts = document.querySelector("#products-mobile");
 const elemProductsDesk = document.querySelector("#products-desktop");
 const buttonsSelection = document.querySelector(".btns-selection");
+const elemCart = document.querySelector("#products-cart");
 
 let quantitySel = 0;
 var totalCart = 0;
@@ -96,11 +97,26 @@ function addInfo(productId){
 }
 
 function addToCart(){
-  let carrito = localStorage.getItem("data");
+  let carrito = JSON.parse(localStorage.getItem("data"));
   console.log(carrito);
-}
 
-function renderCart(cart){
-}
+  carrito.forEach((producto) => {
+       elemCart.innerHTML += 
+    `
+    <div class="crd-product-cart">
+    <div class="img"><img id="img-product-cart" src="${producto.image}" alt="imagen del producto">
+    </div>
+    <div class="box-name-price-x">
+      <p id="txt-name-cart">${producto.title}</p>
+      <p id="txt-price-cart">${producto.price}</p>
+      <button class="btn-plusminus">x</button>
+    </div>
+    <div class="select-quantity">
+        <button class="btn-plusminus">-</button>
+        <input id = "${producto.id}" class ="quantity-products" type="number" value= "${producto.units}" min=0>
+        <button class="btn-plusminus">+</button>
+    </div>
+    `
+  }
+)}
 
-renderProducts();
