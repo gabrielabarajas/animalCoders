@@ -89,7 +89,6 @@ function sendMessage(newValue){
 function updateNum(productId,newValue){
   totalCart = parseInt(totalCart) + parseInt(newValue);
   document.getElementById("total-productos-mobile").innerHTML = totalCart;
-  console.log(newValue);
   sendMessage(newValue);
 }
 
@@ -133,13 +132,24 @@ function renderCart(){
       <button class="btn-plusminus">x</button>
     </div>
     <div class="select-quantity">
-        <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
+        <button class="btn-plusminus" onclick = "decreaseProductCart(${producto.id})">-</button>
         <input id = "${producto.id}" class ="quantity-products" type="number" value= "${producto.units}" min=0>
-        <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
+        <button class="btn-plusminus" onclick = "increaseProductCart(${producto.id})">+</button>
     </div>
     `
   }
 )
 localStorage.clear();
+}
+
+function decreaseProductCart(productId){
+  decreaseProduct(productId);
+  // acciones posteriores
+}
+
+function increaseProductCart(productId){
+  increaseProduct(productId);
+  // acciones posteriores
+  
 }
 
