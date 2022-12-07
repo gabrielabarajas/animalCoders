@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>e-commerce - Patitas Felices</title>
 </head>
-<body>
+<body onload="renderProducts()">
   <!-- Navigation bar for Desktop  -->
     <header class="header-desktop">
         <div  class="nav-bar-left">
@@ -20,13 +20,13 @@
         <li id="nav-bar-right">
           <ul id="lnk-products"><a href="/index.html" target="_self">PRODUCTOS</a></ul>
           <ul id="lnk-shopcart"><a href ="./cart.html" target="_self">CARRITO</a></ul>
-          <p id ="total-productos-desk">Num</p>
+          <p id ="total-productos-desk">0</p>
         </li>
     </header>
     
 
     <!-- Container of Products for Desktop  -->
-    <h2>Productos destacados</h2>
+    <h2 id="p-destacados">Productos destacados</h2>
     <div id="products-desktop">
         
     <!-- Renderizado de productos  -->
@@ -41,15 +41,15 @@
         <a id="pg-cart" href="./cart.html" target="_self">
           <img src="./assets/imgs/carro-de-la-carretilla.png" width="22px">
         </a>
-        <p id ="total-productos-desk">Num</p>
+        <p id ="total-productos-mobile">0</p>
     </div>
     <div id="bg-slogan"> 
       <p id="txt-slogan">Tienda online de productos para perros y gatos</p>
     </div>
 
 <!-- Container of Products for Mobile  -->
-    <div id="products-mobile">
-      <h2>Productos destacados</h2>
+    <div id="products-mobile"> 
+      <h2 id="txt-pdestacados">Productos destacados</h2>
 <!-- Renderizado de productos mobile -->
 
   </div>
@@ -64,7 +64,7 @@
       <div id="btns-add">
         <div class="select-quantity">
             <button class="btn-plusminus">-</button>
-            <input type="text">
+            <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
             <button class="btn-plusminus">+</button>
         </div>
         <button class="btn-plusminus">x</button>
@@ -73,7 +73,7 @@
     </div>
   
     <div id="btns-checkout-cart">
-      <p id="txt-price-cart">Total <span>$</span></p>
+      <p id="txt-price-cart">Total <span>€</span></p>
       <button id="btn-vaciar-cart">Vaciar</button>
       <button id="btn-action-cart">Pagar</button>
     </div>

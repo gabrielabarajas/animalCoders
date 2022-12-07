@@ -12,21 +12,36 @@
     #crd-product-cart {
         display: none;
     }
+
+    #p-destacados {
+        display: none;
+    }
+
     #nav-bar-mobile {
         background-color: var(--light-green);
-        height: 18%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-content: center;
-
+        padding: 15px;
     }
+
     #img-logo{
         width: auto;
         height: 4rem;
         padding-top: 0.5rem;
 
     }
-    #pg-cart {
+
+    #txt-pdestacados{
+        padding: 2rem ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+
+    }
+    #pg-cart{
         padding-top: 21px;
         border-style: none;
         background-color: var(--light-green);
@@ -59,7 +74,7 @@
     #bg-slogan{
 
         background-color: var(--dark-green);
-        height: 16%;
+        height: 8%;
     }
     
     h1{
@@ -72,10 +87,13 @@
     }
     
     .crd-product-mobile{
+        margin: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        background-color: DFFCAD;
+        border-radius: 5%;
     }
     
     .img-product-mobile{
