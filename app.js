@@ -63,7 +63,8 @@ function isInCart(productId){
 
 function sendMessage(newValue){
   if (newValue == 0){
-    alert("Porfavor indicar el numero de unidades a ser agregadas.");
+    Swal.fire('Porfavor indicar el numero de unidades a ser agregadas.');
+    //alert("Porfavor indicar el numero de unidades a ser agregadas.");
   } 
   if (newValue == 1){
     alert("Ha sido agregada 1 unidad al carrito de compra.");
