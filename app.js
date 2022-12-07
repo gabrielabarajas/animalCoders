@@ -82,6 +82,7 @@ function sendMessage(newValue){
       showConfirmButton: false,
       timer: 1500
     })
+
   }
 }
 
@@ -117,10 +118,10 @@ function addInfo(productId){
   }
 
 function addToCart(){
-  let carrito = JSON.parse(localStorage.getItem("data"));
-  console.log(carrito);
+  let cart = JSON.parse(localStorage.getItem("data"));
+  console.log(cart);
 
-  carrito.forEach((producto) => {
+  cart.forEach((producto) => {
        elemCart.innerHTML += 
     `
     <div class="crd-product-cart">
@@ -138,5 +139,7 @@ function addToCart(){
     </div>
     `
   }
-)}
+)
+localStorage.clear();
+}
 
