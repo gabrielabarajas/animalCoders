@@ -64,13 +64,24 @@ function isInCart(productId){
 function sendMessage(newValue){
   if (newValue == 0){
     Swal.fire('Porfavor indicar el numero de unidades a ser agregadas.');
-    //alert("Porfavor indicar el numero de unidades a ser agregadas.");
   } 
   if (newValue == 1){
-    alert("Ha sido agregada 1 unidad al carrito de compra.");
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ha sido agregada 1 unidad al carrito de compra.',
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
   if (newValue > 1){
-    alert(`Han sido agregadas ${newValue} unidades al carrito de compra.`);
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: `Han sido agregadas ${newValue} unidades al carrito de compra.`,
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
 }
 
