@@ -109,7 +109,12 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #DFFCAD;
+    border-radius: 5%;
+    padding-right: 0;
     
    
 }
@@ -118,12 +123,16 @@ h2{
 display: flex;
 flex-direction: column;
 align-content: center;
+margin-right: 0.4rem;
+margin-top: 5%;
 }
 
 #img-product-cart {
     height: 120px;
     width: auto;
-    margin-top: 8%;
+    margin-top: 5%;
+    margin-right: 0.8rem;
+    
 }
 
 .txt-name-cart{
@@ -133,6 +142,7 @@ align-content: center;
     font-size: 2rem;
     width: 66%;
     align-self: center;
+    margin-top: 5%;
 }
 
 #txt-price-cart{
@@ -142,10 +152,11 @@ align-content: center;
 }
 .quantity-products{
     font-size: 2em;
+    width: 2%;
 }
 
 input[type='number']{
-    width: 80px;
+    width: 55px;
 }
 
 .type-input {
@@ -173,7 +184,8 @@ grid-template-columns: 1fr 1fr;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
+
     
 }
 .btn-plusminus{
