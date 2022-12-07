@@ -23,7 +23,7 @@ function renderProducts(){
             <p id = "txt-msg-usuario">mensaje</p>
           </div>
       </div>
-        `
+        
         // Renderiza productos DESKTOP 
       elemProductsDesk.innerHTML += `
       <div class="crd-product-desktop">
