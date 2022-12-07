@@ -42,7 +42,7 @@
 
     }
     #pg-cart{
-        padding-top: 21px;
+        padding-top: 28px;
         border-style: none;
         background-color: var(--light-green);
 
@@ -55,11 +55,18 @@
         align-self: center;
         justify-self: flex-end;
     }
+
+    #total-productos-desk{
+        height: 10px;
+    }
+
     #txt-patitas{
-        
+        font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: 700;
         align-self: flex-end;
+        padding-bottom: 5px;
+        padding-left: 15px;
 
     }
     
