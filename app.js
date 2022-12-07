@@ -68,6 +68,16 @@ function updateNum(productId,newValue){
   document.getElementById("total-productos-desk").innerHTML = totalCart;
 }
 
+function sendMessage(productId,newValue){
+let msgPosition = `txt-msg-usuario${productId}` ;
+
+  if (newValue == 1){
+    document.getElementById(msgPosition).innerHTML = `Se ha agregado ${newValue} unidad al carrito`;
+  }else{
+    document.getElementById(msgPosition).innerHTML = `Se han agregado ${newValue} unidades al carrito`;
+  }
+}
+
 function addInfo(productId){
   let newValue = document.getElementById(productId).value;
   let msgPosition = `txt-msg-usuario${productId}` ;
@@ -91,8 +101,8 @@ function addInfo(productId){
       })
       localStorage.setItem("data",JSON.stringify(cart));
       console.log(cart);
-    }
-    document.getElementById(msgPosition).innerHTML = `Se han agregado ${newValue} unidades al carrito`;
+      }
+      sendMessage(productId,newValue);
   }
 }
 
