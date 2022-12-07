@@ -26,7 +26,6 @@ function renderProducts(){
           <div id = "txt-msg-usuario${producto.id}"></div>
       </div>
         `
-        // Renderiza productos DESKTOP 
       elemProductsDesk.innerHTML += `
       <div class="crd-product-desktop">
             <img id="img-product" src="${producto.image}" alt="${producto.title}">
@@ -62,22 +61,32 @@ function isInCart(productId){
  return result;
 }
 
+function sendMessage(newValue){
+  if (newValue == 0){
+    alert("Porfavor indicar el numero de unidades a ser agregadas.");
+  } 
+  if (newValue == 1){
+    alert("Ha sido agregada 1 unidad al carrito de compra.");
+  }
+  if (newValue > 1){
+    alert(`Han sido agregadas ${newValue} unidades al carrito de compra.`);
+  }
+}
+
 function updateNum(productId,newValue){
   totalCart = parseInt(totalCart) + parseInt(newValue);
   document.getElementById("total-productos-mobile").innerHTML = totalCart;
-  document.getElementById("total-productos-desk").innerHTML = totalCart;
+  console.log(newValue);
+  sendMessage(newValue);
 }
 
 function addInfo(productId){
   let newValue = document.getElementById(productId).value;
-  let msgPosition = `txt-msg-usuario${productId}` ;
   const productSel = productos.find((producto)=> producto.id === productId);
   
   updateNum(productId,newValue);
 
-  if (newValue == 0){
-    document.getElementById(msgPosition).innerHTML= "Advertencia: No se puede agregar 0 unidades al carrito";
-  } else {
+  if (newValue > 0){
       if (isInCart(productId)){
         cart.forEach((element) => {
           if (element.id === productId){
@@ -92,11 +101,8 @@ function addInfo(productId){
       localStorage.setItem("data",JSON.stringify(cart));
       console.log(cart);
     }
-    document.getElementById(msgPosition).innerHTML = 'Se han agregado ${newValue} unidades al carrito';
-      }
-      sendMessage(productId,newValue);
   }
-
+  }
 
 function addToCart(){
   let carrito = JSON.parse(localStorage.getItem("data"));
