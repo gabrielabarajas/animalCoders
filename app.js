@@ -104,7 +104,7 @@ function addToCart(){
        elemCart.innerHTML += 
     `
     <div class="crd-product-cart">
-    <div class="img"><img id="img-product-cart" src="${producto.image}" alt="imagen del producto">
+    <div class="img-product-cart" ><img id="img-product-cart" src="${producto.image}" alt="imagen del producto">
     </div>
     <div class="box-name-price-x">
       <p id="txt-name-cart">${producto.title}</p>
