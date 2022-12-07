@@ -36,6 +36,7 @@ body {
     #products-mobile{
         display: none;
     }
+
 /*____________HEADER_______________*/
 #nav-bar-mobile {
     background-color: var(--light-green);
@@ -76,6 +77,10 @@ body {
     font-weight: bold;
     align-self: flex-end;
    
+}
+
+#total-productos-mobile{
+    padding-top: 7%;
 }
 
 #txt-slogan{
