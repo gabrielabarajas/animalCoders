@@ -38,9 +38,11 @@ body {
 /*____________HEADER_______________*/
 #nav-bar-mobile {
     background-color: var(--light-green);
-    height: 10%;
     display: flex;
     justify-content: space-around;
+    align-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
    
 }
 #img-logo{
@@ -53,9 +55,9 @@ body {
     padding-top: 21px;
     border-style: none;
     background-color: var(--light-green);
-    pointer-events: none;
+    /*pointer-events: none;
     align-self: center;
-    justify-self: flex-end;
+    justify-self: flex-end;*/
   
 }
 #pg-main{
@@ -65,6 +67,7 @@ body {
     width: auto;
     align-self: center;
     justify-self: flex-end;
+    padding-top:10px;
 }
 #txt-patitas{
     
@@ -77,20 +80,24 @@ body {
 #txt-slogan{
     color: white;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 4%;
     padding-bottom: 2%;
+    font-size: 16px;
 }
 
 #bg-slogan{
-   
+
     background-color: var(--dark-green);
+    height: 8%;
+    margin-bottom: 2rem;
+   
 }
 /*____________MAIN_______________*/
 
-h1{
+h2{
     width: 80%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 10%;
     font-size: 2em;
     text-align: center;
@@ -112,8 +119,9 @@ flex-direction: column;
 align-content: center;
 }
 
-.img-product-cart {
-    width: 50px;
+#img-product-cart {
+    height: 120px;
+    width: auto;
     margin-top: 8%;
 }
 
