@@ -2,7 +2,7 @@ const productos = [
     {
         id: 0,
         image: "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_468,w_500/c_pad,h_468,w_500/l_sale-badge,fl_relative,w_0.12,g_north_west,e_sharpen/l_bypetco-badge,fl_relative,w_0.20,g_south_east,e_sharpen/3396557-center-1",
-        title: "Pepinillos Navideños, juguete para gatos, paquete de 2",
+        title: "Pepinillos Navideños, juguete para gatos",
         price: 5.49,
     },
     {
@@ -26,49 +26,49 @@ const productos = [
     {
         id: 4,
         image: "https://static.miscota.com/media/1/photos/products/042657/88-63627821e9590_g.png",
-        title: "Inodorina Spray desodorante de talco para perros y gatos",
+        title: "Inodorina Spray talco para perros y gatos",
         price: 6.15,
     },    
     {
         id: 5,
         image: "https://m.media-amazon.com/images/I/71i87T0k44L._AC_SX679_.jpg",
-        title: "Sanicat Active Arena de gatos, ultra aglomerante, aroma de flor de loto, 6L",
+        title: "Sanicat Arena de gatos ultra aglomerante",
         price: 12.79,
     },
     {
         id: 6,
         image: "https://static.miscota.com/media/1/photos/products/049252/49252-24802_0_g.jpeg",
-        title: "Dermoscent Bálsamo bio reparador para almohadillas y trufa para perros",
+        title: "Bálsamo  almohadillas y trufa para perros",
         price: 17.95,
     },
     {
         id: 7,
         image: "https://static.miscota.com/media/1/photos/products/049144/49144-adofilm_0_g.jpg",
-        title: "Calier Pomada ado film protectora y cicatrizante para perros y gatos",
+        title: "Pomada protectora y cicatrizante para perros y gatos",
         price: 11.95,
     },
     {
         id: 8,
         image: "https://static.miscota.com/media/1/photos/products/069333/69333-5414365062705_1_g.jpg",
-        title: "Duvo Plus Albornoz microfibra azul para perros pequeños",
+        title: "Albornoz microfibra azul para perros pequeños",
         price: 20.92,
     },
     {
         id: 9,
         image: "https://m.media-amazon.com/images/I/61nz0M6JqtL._AC_SX679_.jpg",
-        title: "PETKIT Pura X caja de arena inteligente, autolimpiable con eliminación de olores y control de App para gatos",
+        title: "PETKIT caja de arena inteligente para gatos",
         price: 200.92,
     },
     {
         id: 10,
         image: "https://m.media-amazon.com/images/I/719DcxvJqZL._AC_SX679_.jpg",
-        title: "Cuello protector hinchable y ajustable de tacto suave para perros y gatos",
+        title: "Cuello protector ajustable para perros y gatos",
         price: 20.92,
     },
     {
         id: 11,
         image: "https://m.media-amazon.com/images/I/61dR+sm-RGL._AC_SX679_.jpg",
-        title: "PETKIT Mochila para transporte ventilada, ligera y cómoda con sistema de iluminación para gatos y perros pequeños",
+        title: "PETKIT Mochila transporte para gatos y perros pequeños",
         price: 20.92,
     },
     {
@@ -80,7 +80,7 @@ const productos = [
     {
         id: 13,
         image: "https://cdn.shopify.com/s/files/1/1511/7434/products/tuft-paw-milo-cat-tree-2_f1257422-e1e7-45d8-ac8d-f332f60f607d.jpg?crop=center&height=540&v=1610405756&width=540",
-        title: "Milo Rascador para gatos, con túnel para jugar y múltiples opciones para descansar y dormir",
+        title: "Rascador para gatos con túnel para jugar y descansar",
         price: 500.49,
     },
     {
