@@ -92,9 +92,11 @@ function addInfo(productId){
       localStorage.setItem("data",JSON.stringify(cart));
       console.log(cart);
     }
-    document.getElementById(msgPosition).innerHTML = `Se han agregado ${newValue} unidades al carrito`;
+    document.getElementById(msgPosition).innerHTML = 'Se han agregado ${newValue} unidades al carrito';
+      }
+      sendMessage(productId,newValue);
   }
-}
+
 
 function addToCart(){
   let carrito = JSON.parse(localStorage.getItem("data"));
