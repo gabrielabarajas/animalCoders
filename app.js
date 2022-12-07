@@ -117,7 +117,7 @@ function addInfo(productId){
   }
   }
 
-function addToCart(){
+function renderCart(){
   let cart = JSON.parse(localStorage.getItem("data"));
   console.log(cart);
 
@@ -133,9 +133,9 @@ function addToCart(){
       <button class="btn-plusminus">x</button>
     </div>
     <div class="select-quantity">
-        <button class="btn-plusminus">-</button>
+        <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
         <input id = "${producto.id}" class ="quantity-products" type="number" value= "${producto.units}" min=0>
-        <button class="btn-plusminus">+</button>
+        <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
     </div>
     `
   }
