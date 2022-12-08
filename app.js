@@ -170,6 +170,7 @@ function addTotal(){
  totalCart = 0; 
  cart.forEach((item)=>{
   totalCart += item.units * item.price; 
+  totalCart = totalCart.toFixed(2);
  });
  total.innerHTML = totalCart;
 }
