@@ -109,7 +109,7 @@ function renderCart(){
     <div class="box-name-price-x">
       <p id="txt-name-cart">${producto.title}</p>
       <p id="txt-price-cart">${producto.price}</p>
-      <button class="btn-plusminus">x</button>
+      <button class="btn-plusminus" onclick = "deleteItem(${producto.id})">x</button>
     </div>
     <div class="select-quantity">
         <button class="btn-plusminus" onclick = "decreaseProductCart(${producto.id})">-</button>
@@ -137,6 +137,7 @@ function sendMessaDeleteItem(){
 function deleteItem(productId){
   sendMessaDeleteItem();
   cart = cart.filter(producto => producto.id != productId);
+  renderCart();
 }
 
 function decreaseProductCart(productId){
@@ -146,7 +147,6 @@ function decreaseProductCart(productId){
       producto.units = document.getElementById(productId).value;
       if (producto.units == 0){
         deleteItem(productId);
-        renderCart();
       }
     }
   });
