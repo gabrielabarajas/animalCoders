@@ -16,7 +16,7 @@
       <button type="button" id="pg-cart">
         <img src="./assets/imgs/carro-de-la-carretilla.png" width="22px">
       </button> 
-      <p id ="total-productos-mobile">n</p>
+      <p id ="total-productos-mobile"></p>
     </div>
 
     <div id="bg-slogan"> 
@@ -30,10 +30,10 @@
 
   <div id="btns-checkout-cart">
     <div class ="box-total-vaciar">
-      <p id="txt-price-cart">Total <span>€</span></p>
-      <button class="btn-delete-all">Vaciar</button> 
+      <p id="txt-price-cart">Total €<span id="txt-price-cart"></span></p>
+      <button class="btn-delete-all" onclick="emptyCart()">Vaciar</button> 
     </div>
-    <button class="btn-pay">Pagar</button>
+    <a class="btn-pay" href="https://www.paypal.com/donate/?hosted_button_id=27F32ZRTHS3VN">Pagar</a>
   </div>
 
   <footer class="nav-footer">

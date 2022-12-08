@@ -1,6 +1,8 @@
 const elemProducts = document.querySelector("#products-mobile");
 const buttonsSelection = document.querySelector(".btns-selection");
 const elemCart = document.querySelector("#products-cart");
+const total = document.querySelector("#txt-price-cart");
+
 
 let quantitySel = 0;
 var totalCart = 0;
@@ -98,6 +100,7 @@ function addInfo(productId){
   }
 
 function renderCart(){
+  console.log(cart);
   elemCart.innerHTML = "";
   if (cart != null){
   cart.forEach((producto) => {
@@ -122,7 +125,9 @@ function renderCart(){
 localStorage.clear();
 }else{
   elemCart.innerHTML = "";
+  total.innerHTML = "Total €"
 }
+addTotal();
 }
 
 function getDataStorage(){
@@ -147,6 +152,7 @@ function decreaseProductCart(productId){
       producto.units = document.getElementById(productId).value;
       if (producto.units == 0){
         deleteItem(productId);
+        addTotal();
       }
     }
   });
@@ -157,13 +163,22 @@ function increaseProductCart(productId){
   cart.forEach((producto) => {
     if (producto.id == productId){
       producto.units = document.getElementById(productId).value;
+      addTotal();
     }
   });
-  console.log(cart);
 }
 
 function addTotal(){
- // acciones posteriores
+ totalCart = 0; 
+ cart.forEach((item)=>{
+  totalCart += item.units * item.price; 
+ });
+ total.innerHTML = totalCart;
+}
+
+function emptyCart(){
+  cart = null;
+  renderCart();
 }
 
 function payTotal(){
