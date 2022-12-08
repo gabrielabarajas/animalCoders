@@ -47,8 +47,12 @@
         padding-top: 28px;
         border-style: none;
         background-color: var(--light-green);
-
     }
+    #pg-cart{  
+        background-color: darkolivegreen;
+        clip-path: circle(25% at center);
+    }
+
     #pg-main{
         border-style: none;
         background-color: var(--light-green);
