@@ -7,25 +7,8 @@
     <link rel="stylesheet" href="./assets/styles/cartmobile.css">
     <title>e-commerce - Patitas Felices</title>
 </head>
-<body onload="addToCart()">
-  <!-- Navigation bar for Desktop  
-    <header class="header-desktop">
-        <div  class="nav-bar-left">
-            <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
-            <div class="nav-bar-texto">
-                <h2></h2>
-                <h1>Patitas Felices</h1>
-                <h5>Tienda online de productos para perros y gatos</h5>
-            </div>
-        </div>
-        <li id="nav-bar-right">
-          <ul id="lnk-products">PRODUCTOS</ul>
-        
-          <ul id="lnk-shopcart">CARRITO</ul>
-        </li>
-    </header> -->
+<body onload="getDataStorage()">
 
-<!-- Navigation bar for Mobile  -->
     <div id = "nav-bar-mobile">
       <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
       <p id="txt-patitas">Patitas Felices</p>
@@ -33,34 +16,33 @@
       <button type="button" id="pg-cart">
         <img src="./assets/imgs/carro-de-la-carretilla.png" width="22px">
       </button> 
-      <p id ="total-productos-mobile">n</p>
+      <p id ="total-productos-mobile"></p>
     </div>
+
     <div id="bg-slogan"> 
       <p id="txt-slogan">Tienda online de productos para perros y gatos</p>
     </div>
 
-<!-- Container of Products for ShopCart Mobile and Desktop  -->
   <h2>Mi compra</h2>
 
   <div id="products-cart">
-  <!-- Renderizado de productos carrito  -->
   </div>
-    <div id="btns-checkout-cart">
-        <div class ="box-total-vaciar">
-          <p id="txt-price-cart">Total <span>€</span></p>
-         <button class="btn-delete-all">Vaciar</button> 
-        </div>
-          <button class="btn-pay">Pagar</button>
-        </div>
 
- 
-  
-  <!-- Footer for Desktop and Mobile  -->
+  <div id="btns-checkout-cart">
+    <div class ="box-total-vaciar">
+      <p id="txt-price-cart">Total €<span id="txt-price-cart"></span></p>
+      <button class="btn-delete-all" onclick="emptyCart()">Vaciar</button> 
+    </div>
+    <a class="btn-pay" href="https://www.paypal.com/donate/?hosted_button_id=27F32ZRTHS3VN">Pagar</a>
+  </div>
+
   <footer class="nav-footer">
       <p>Av. de Los Ladridos, 11. Barcelona</p>
       <p>935 678 901</p>
   </footer>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
 </body>
