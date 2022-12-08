@@ -94,13 +94,11 @@ function addInfo(productId){
         units: newValue,
       })
       localStorage.setItem("data",JSON.stringify(cart));
-      console.log(cart);
     }
   }
   }
 
 function renderCart(){
-  console.log(cart);
   elemCart.innerHTML = "";
   if (cart != null){
   cart.forEach((producto) => {
@@ -179,9 +177,5 @@ function addTotal(){
 function emptyCart(){
   cart = null;
   renderCart();
-}
-
-function payTotal(){
- // acciones posteriores
 }
 
