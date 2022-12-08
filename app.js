@@ -1,15 +1,13 @@
 const elemProducts = document.querySelector("#products-mobile");
-const elemProductsDesk = document.querySelector("#products-desktop");
 const buttonsSelection = document.querySelector(".btns-selection");
 const elemCart = document.querySelector("#products-cart");
 
 let quantitySel = 0;
 var totalCart = 0;
-const cart =[];
+var cart =[];
 
 function renderProducts(){
     productos.forEach((producto) => {
-      // ------------ Renderiza productos MOBILE ------------------  
       elemProducts.innerHTML += `
         <div class="crd-product-mobile">
           <img class="img-product-mobile" src="${producto.image}" alt="${producto.title}">
@@ -27,7 +25,7 @@ function renderProducts(){
       </div>
         `   
     });
-}
+  }
 
 function increaseProduct(indexProduct){
   document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
@@ -47,7 +45,7 @@ function isInCart(productId){
 
 function sendMessage(newValue){
   if (newValue == 0){
-    Swal.fire('Porfavor indicar el numero de unidades a ser agregadas.');
+    Swal.fire('Porfavor indicar el número de unidades a ser agregadas.');
   } 
   if (newValue == 1){
     Swal.fire({
@@ -66,11 +64,10 @@ function sendMessage(newValue){
       showConfirmButton: false,
       timer: 1500
     })
-
   }
 }
 
-function updateNum(productId,newValue){
+function updateNum(newValue){
   totalCart = parseInt(totalCart) + parseInt(newValue);
   document.getElementById("total-productos-mobile").innerHTML = totalCart;
   sendMessage(newValue);
@@ -80,7 +77,7 @@ function addInfo(productId){
   let newValue = document.getElementById(productId).value;
   const productSel = productos.find((producto)=> producto.id === productId);
   
-  updateNum(productId,newValue);
+  updateNum(newValue);
 
   if (newValue > 0){
       if (isInCart(productId)){
@@ -101,9 +98,10 @@ function addInfo(productId){
   }
 
 function renderCart(){
-  let cart = JSON.parse(localStorage.getItem("data"));
-  console.log(cart);
-
+  cart = JSON.parse(localStorage.getItem("data"));
+  if (cart === null){
+    elemCart.innerHTML = "";
+  } else {
   cart.forEach((producto) => {
        elemCart.innerHTML += 
     `
@@ -125,15 +123,43 @@ function renderCart(){
 )
 localStorage.clear();
 }
+}
+
+function sendMessaDeleteItem(){
+  Swal.fire('El producto será eliminado del carrito.');
+}
+
+function deleteItem(productId){
+  sendMessaDeleteItem();
+  cart = cart.filter(producto => producto.id != productId);
+  console.log(cart);
+}
 
 function decreaseProductCart(productId){
   decreaseProduct(productId);
-  // acciones posteriores
-}
+  cart.forEach((producto) => {
+    if (producto.id == productId){
+      producto.units = document.getElementById(productId).value;
+      if (producto.units == 0){
+        deleteItem(productId);
+        renderCart();
+      }
+    }
+  });
+  console.log(cart);
+  }
 
 function increaseProductCart(productId){
   increaseProduct(productId);
-  // acciones posteriores
   
+  
+}
+
+function addTotal(){
+ // acciones posteriores
+}
+
+function payTotal(){
+ // acciones posteriores
 }
 
