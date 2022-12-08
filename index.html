@@ -3,91 +3,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>e-commerce - Patitas Felices</title>
 </head>
 <body onload="renderProducts()">
-  <!-- Navigation bar for Desktop  -->
-    <header class="header-desktop">
-        <div  class="nav-bar-left">
-            <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
-            <div class="nav-bar-texto">
-                <h1>Patitas Felices</h1>
-                <h5>Tienda online de productos para perros y gatos</h5>
-            </div>
-        </div>
-        <li id="nav-bar-right">
-          <ul id="lnk-products"><a href="/index.html" target="_self">PRODUCTOS</a></ul>
-          <ul id="lnk-shopcart"><a href ="./cart.html" target="_self">CARRITO</a></ul>
-          <p id ="total-productos-desk">0</p>
-        </li>
-    </header>
-    
 
-    <!-- Container of Products for Desktop  -->
-    <h2 id="p-destacados">Productos destacados</h2>
-    <div id="products-desktop">
-        
-    <!-- Renderizado de productos  -->
-        
-    </div>
-
-<!-- Navigation bar for Mobile  -->
-    <div id = "nav-bar-mobile">
-      <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
-      <p id="txt-patitas">Patitas Felices</p>
-      <a id="pg-main" href="./index.html" target="_self">
-        <img  src="./assets/imgs/tienda.png" width="20px"> 
-      </a>
-      <a id="pg-cart" href="./cart.html" target="_self">
-        <img src="./assets/imgs/carro-de-la-carretilla.png" width="22px">
-      </a>
-      <p id ="total-productos-mobile"></p>
-    </div>
-    <div id="bg-slogan"> 
-      <p id="txt-slogan">Tienda online de productos para perros y gatos</p>
-    </div>
-
-<!-- Container of Products for Mobile  -->
-    <div id="products-mobile"> 
-      <h2 id="txt-pdestacados">Productos destacados</h2>
-<!-- Renderizado de productos mobile -->
-
+  <div id = "nav-bar-mobile">
+    <img id="img-logo" src="./assets/imgs/logo.png" alt="Logotipo de la empresa" width="100px">
+    <p id="txt-patitas">Patitas Felices</p>
+    <a id="pg-main" href="./index.html" target="_self">
+      <img  src="./assets/imgs/tienda.png" width="20px"> 
+    </a>
+    <a id="pg-cart" href="./cart.html" target="_self">
+      <img src="./assets/imgs/carro-de-la-carretilla.png" width="22px">
+    </a>
+    <p id ="total-productos-mobile"></p>
   </div>
-<!-- Container of Products for ShopCart Mobile and Desktop  -->
-  <div id="products-cart">
-    <h2>Mi compra</h2>
-  <!-- Renderizado de productos carrito  -->
-    <div class="crd-product-cart">
-      <img id="img-product-cart" src="" alt="imagen del producto">
-      <p id="txt-name-cart">Nombre del producto</p>
-      <p id="txt-price-cart">Precio</p>
-      <div id="btns-add">
-        <div class="select-quantity">
-            <button class="btn-plusminus">-</button>
-            <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
-            <button class="btn-plusminus">+</button>
-        </div>
-        <button class="btn-plusminus">x</button>
-        <button class="btn-action">Añadir al carrito</button>
-      </div>
-    </div>
-  
-    <div id="btns-checkout-cart">
-      <p id="txt-price-cart">Total <span>€</span></p>
-      <button id="btn-vaciar-cart">Vaciar</button>
-      <button id="btn-action-cart">Pagar</button>
-    </div>
 
+  <div id="bg-slogan"> 
+    <p id="txt-slogan">Tienda online de productos para perros y gatos</p>
+  </div>
+
+  <div id="products-mobile"> 
+    <h2 id="txt-pdestacados">Productos destacados</h2>
   </div>
   
-  <!-- Footer for Desktop and Mobile  -->
-  <footer class="nav-footer">
-      <p>Av. de Los Ladridos, 11. Barcelona</p>
-      <p>935 678 901</p>
-  </footer>
-
+<footer class="nav-footer">
+    <p>Av. de Los Ladridos, 11. Barcelona</p>
+    <p>935 678 901</p>
+</footer>
+  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
 </body>

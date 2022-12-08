@@ -1,22 +1,4 @@
 @media screen and (max-width:992px) {
-    .header-desktop{
-        display: none;
-    }
-    #products-desktop{
-        display: none;
-    }
-    #products-cart {
-        display: none;
-    }
-    
-    #crd-product-cart {
-        display: none;
-    }
-
-    #p-destacados {
-        display: none;
-    }
-
     #nav-bar-mobile {
         background-color: var(--light-green);
         display: flex;
@@ -64,7 +46,8 @@
     }
 
     #total-productos-mobile{
-        height: 10px;
+        heigh
+        t: 10px;
         width: 10px;
         display: flex;
 
@@ -139,7 +122,7 @@
     }
     
     input[type='number']{
-        width: 80px;
+        width: 30px;
     }
 
     .num-products{
