@@ -1,0 +1,262 @@
+@import url("./cartmobile.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*change check*/
+
+:root {
+    --background-color: #fff4ed; 
+    --light-blue: #595cae;
+    --dark-blue: #424478;
+    --dark-green: #6EC189;
+    --light-green: #DFFCAD; 
+}
+
+body {  
+    height: 100vh;
+    width: 100%;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+
+@media screen and (max-width:992px) {
+    .header-desktop{
+        display: none;
+    }
+    #products-desktop{
+        display: none;
+    }
+    #products-mobile{
+        display: none;
+    }
+
+/*____________HEADER_______________*/
+#nav-bar-mobile {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+   
+}
+#img-logo{
+    width: auto;
+    height: 4rem;
+    padding-top: 0.5rem;
+
+}
+#pg-cart {
+    padding-top: 21px;
+    border-style: none;
+    background-color: var(--light-green);
+    /*pointer-events: none;
+    align-self: center;
+    justify-self: flex-end;*/
+  
+}
+#pg-main{
+    border-style: none;
+    background-color: var(--light-green);
+    height: 1.2rem;
+    width: auto;
+    align-self: center;
+    justify-self: flex-end;
+    padding-top:10px;
+}
+#txt-patitas{
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-end;
+   
+}
+
+#total-productos-mobile{
+    padding-top: 7%;
+}
+
+#txt-slogan{
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    font-size: 16px;
+}
+
+#bg-slogan{
+
+    background-color: var(--dark-green);
+    height: 8%;
+    margin-bottom: 2rem;
+   
+}
+/*____________MAIN_______________*/
+
+h2{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.crd-product-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #DFFCAD;
+    border-radius: 5%;
+    padding-right: 0;
+    
+   
+}
+
+.box-name-price-x {
+display: flex;
+flex-direction: column;
+align-content: center;
+margin-right: 0.4rem;
+margin-top: 5%;
+}
+
+#img-product-cart {
+    height: 120px;
+    width: auto;
+    margin-top: 5%;
+    margin-right: 0.8rem;
+    
+}
+
+.txt-name-cart{
+    padding-top: 6%;
+    font-weight: bold;
+    color: rgb(80, 78, 78);
+    font-size: 2rem;
+    width: 66%;
+    align-self: center;
+    margin-top: 5%;
+}
+
+#txt-price-cart{
+    font-weight: bold;
+    font-size: 1rem;
+    align-self: center;
+}
+.quantity-products{
+    font-size: 2em;
+    width: 2%;
+}
+
+input[type='number']{
+    width: 30px;
+}
+
+.type-input {
+    width: 2rem;
+    align-self: center;
+
+}
+
+.num-products{
+    font-weight: bold;
+    font-size: 2em;
+    width: 3em;
+}
+
+.btns-checkout-cart {
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+
+.box-total-vaciar {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.select-quantity{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.btn-plusminus{
+    background-color: var(--dark-green);
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    color: white;
+    font-size: 2.5em;
+    align-self: center;
+    margin: 0.2rem;
+}
+
+
+#btns-checkout-cart {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+}
+
+.box-total-vaciar{
+    justify-items: center;
+}
+.btn-delete-all{
+    background-color: var(--dark-green);
+    border-radius: 15px;
+    padding: 0.5em;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1em;}
+
+    .btn-pay {
+    width: 80%;
+    align-self: center;
+    background-color: var(--dark-green);
+    border-radius: 15px;
+    padding: 0.5em;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 2.3rem;
+    text-decoration: none;
+    text-align: center;
+}
+    
+    
+
+/*____________FOOTER_______________*/
+.nav-footer{
+    text-align: center;
+    background-color: var(--light-green);
+    font-size: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  
+    }
+
+    p {
+        margin-bottom: 0; 
+    }
+}

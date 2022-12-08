@@ -1,102 +1,177 @@
 @media screen and (max-width:992px) {
-    .header-desktop{
-        display: none;
-    }
-    #products-desktop{
-        display: none;
-    }
-    #products-cart{
-        display: none;
+    header{
+        width: 100%;
+        position:fixed;
     }
     #nav-bar-mobile {
         background-color: var(--light-green);
-        height: 10%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
+        align-content: center;
+        padding: 15px;
+
     }
+
     #img-logo{
-        width: 7%;
-        height: 58%;
-        margin-top: 6%;
+        width: auto;
+        height: 4rem;
+        padding-top: 0.5rem;
+
     }
-    #pg-main, #pg-cart{
-        width: 7%;
-        margin-top: 6%;
+
+    #txt-pdestacados{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        width: 315px;
+        text-align: center;
+        margin-left: 28px;
+
     }
+    #pg-cart{
+        padding-top: 28px;
+        border-style: none;
+        background-color: var(--light-green);
+
+    }
+    #pg-main{
+        border-style: none;
+        background-color: var(--light-green);
+        height: 1.2rem;
+        width: auto;
+        align-self: center;
+        justify-self: flex-end;
+        padding-top: 7px;
+    }
+
+    #total-productos-mobile{
+        height: 10px;
+        width: 10px;
+        display: flex;
+        font-weight: bolder;
+        font-size: 2em;
+        padding-top: 6%;
+    }
+
     #txt-patitas{
         font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
         font-weight: 700;
+        align-self: flex-end;
+        padding-bottom: 5px;
+        padding-left: 15px;
+
     }
     
     #txt-slogan{
         color: white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
         text-align: center;
-        padding-top: 2%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        font-size: 16px;
     }
     
     #bg-slogan{
-        height: 6%;
+
         background-color: var(--dark-green);
+        height: 8%;
     }
     
     h1{
-        width: 50%;
+        width: 80%;
         margin: 0 auto;
         margin-top: 10%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         font-weight: 400;
     }
     
     .crd-product-mobile{
+        margin: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        background-color: DFFCAD;
+        border-radius: 5%;
     }
     
-    #img-product-mobile{
+    .img-product-mobile{
         width: 250px;
         margin-top: 8%;
     }
     
-    #txt-name-mobile{
-        padding-top: 5%;
-        font-family: 'Roboto', sans-serif;
+    .txt-name-mobile{
+        padding-top: 6%;
         font-weight: bold;
         color: rgb(80, 78, 78);
-        font-size: 2.5em;
+        font-size: 1.5em;
         text-align: center;
         width: 66%;
     }
     
-    #txt-price-mobile{
+    .txt-price-mobile{
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    .quantity-products{
+        font-size: 2em;
+    }
+    
+    input[type='number']{
+        width: 30px;
+    }
+
+    .num-products{
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        font-size: 3em;
+        font-size: 2em;
+        width: 3em;
     }
-    
-    .btns-selection{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+ 
+    .btns-selection {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
     }
+    .ctn-selection{
+        margin-bottom: 0;
+}
     .btn-plusminus{
-    
-        border-radius: 10px;
         background-color: var(--dark-green);
-        border-style: none;
-        font-size:6em;
+        border-radius: 15px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        color: white;
+        font-size: 2.5em;
+    }
+    
+    .btn-action{
+        background-color: var(--dark-green);
+        border-radius: 15px;
+        padding: 0.5em;
+        border: none;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 1em;
+        justify-self: center;
+    }
+    .nav-footer{
+        text-align: center;
+        background-color: var(--light-green);
+        font-size: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
         
-    }
-    .btn-trash{
-        width: 50px;
-        padding: 1em;
-    }
+        }
     
-    
+        p {
+            margin-bottom: 0; 
+        }
     }

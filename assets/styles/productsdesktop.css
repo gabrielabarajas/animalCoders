@@ -1,21 +1,33 @@
 @media screen and (min-width: 992px) {
     
-   /*--------------------------HEADER------------------------------*/
+    /*--------------------------HEADER------------------------------*/
 .header-desktop{
     list-style: none;
     display: grid;
     grid-template-columns: 70% 30%;
-    background-color: var(--light-blue);
+    background-color: var(--light-green);
+    height: 145px;
 }
+
+h1{
+    font-size: 5,1em;
+    padding-top: 60px;
+    line-height: 15px;
+}
+
 .nav-bar-left{
-   display: grid; 
-   grid-template-columns: 30%  70%;
+    display: grid; 
+    grid-template-columns: 30%  70%;
 
 }
 #img-logo{
-    justify-self: center;
-    align-self: center;
+    justify-self: right;
+    width: 90px;
+    padding-top: 16px;
+    margin-right: 12px;
 }
+
+
 #nav-bar-right{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -25,7 +37,9 @@
     justify-self:end;
     align-self: center;
     font-size: 1.2rem ;
+    
 }
+
 #lnk-shopcart{
     justify-self: start;
     align-self: center;
@@ -33,12 +47,15 @@
 
 }
 
+#lnk-shopcart a, #lnk-products a{
+    text-decoration: none; 
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
 
 /*-----------------------MAIN---------------------------*/
-h1{
-    margin-top: 2rem;
 
-}
 #img-product{
     height: auto;
     width: 7rem;
@@ -53,11 +70,11 @@ h1{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .btn-action {
-background-color: var(--dark-blue);
-border: none;
-border-radius: 30px;
-padding: 0.5rem;
-font-weight: bold;
+    background-color: var(--dark-green);
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem;
+    font-weight: bold;
 }
 #nav-bar-mobile{
     display: none;
@@ -71,6 +88,7 @@ font-weight: bold;
 }
 #products-cart{
     display: none; 
+
 }
 .crd-product-cart{
 display: none; 
@@ -78,7 +96,7 @@ display: none;
 /*-----------------------FOOTER-------------------------*/
 .nav-footer{
     text-align: center;
-    background-color: var(--light-blue);
+    background-color: var(--light-green);
     font-size: 1rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -86,6 +104,6 @@ display: none;
     }
 
     p {
-        margin-bottom: 0; 
+    margin-bottom: 0; 
     }
 }

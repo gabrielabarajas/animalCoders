@@ -1,65 +1,182 @@
 const elemProducts = document.querySelector("#products-mobile");
-const elemProductsDesk = document.querySelector("#products-desktop");
-
 const buttonsSelection = document.querySelector(".btns-selection");
+const elemCart = document.querySelector("#products-cart");
+const total = document.querySelector("#txt-price-cart");
+
+
 let quantitySel = 0;
-let cart = [];
+var totalCart = 0;
+var cart =[];
 
 function renderProducts(){
     productos.forEach((producto) => {
-        elemProducts.innerHTML += `
+      elemProducts.innerHTML += `
         <div class="crd-product-mobile">
-          <img id="img-product-mobile" src="${producto.image}" alt="${producto.title}">
-          <p id="txt-name-mobile">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}<span> €</span></p>
+          <img class="img-product-mobile" src="${producto.image}" alt="${producto.title}">
+          <p class="txt-name-mobile">${producto.title}</p>
+          <p class="txt-price-mobile">${producto.price}<span> €</span></p>
           <div class="btns-selection">
             <div class="ctn-selection">
-              <button class="btn-plusminus">-</button>
-              <input type="text" size="3">
-              <button class="btn-plusminus">+</button>
+              <button class="btn-plusminus" onclick = "decreaseProduct(${producto.id})">-</button>
+              <input id = "${producto.id}" class ="quantity-products" type="number" value= 0 min=0>
+              <button class="btn-plusminus" onclick = "increaseProduct(${producto.id})">+</button>
             </div>
-            <img class="btn-trash"src="./assets/imgs/papelera-de-reciclaje.png" alt="papelera de reciclaje">
-            <button class="btn-action" onclick ="addToCart("${producto.id}")">Añadir al carrito</button>
+            <button class="btn-action" onclick ="addInfo(${producto.id})">Añadir al carrito</button>
           </div>
+          <div id = "txt-msg-usuario${producto.id}"></div>
       </div>
-        `
-      elemProductsDesk.innerHTML += `
-      <div class="crd-product-desktop">
-            <img id="img-product" src="${producto.image}" alt="${producto.title}">
-            <p id="txt-product-name">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
-          <p id="txt-price"></p>
-            <div id="btns-add">
-              <button class="btn-plusminus">-</button>
-              <input type="text">
-              <button class="btn-plusminus">+</button>
-              <button class="btn-plusminus">x</button>
-              <button class="btn-action">Añadir al carrito</button>
-            </div>
-        </div>
-        `
-        
+        `   
     });
-}
-function selectProduct(id){
-  console.log();
-  //document.querySelector(".btns-selection").style.display = "block";
-  let cantidad = prompt("¿Cuántas unidades desea añadir?", "1");
-  console.log(id);
-  console.log(cantidad);
+  }
+
+function increaseProduct(indexProduct){
+  document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) + 1 ;
 }
 
-function increaseProduct(){
-
+function decreaseProduct(indexProduct){
+    document.getElementById(indexProduct).value = parseInt (document.getElementById(indexProduct).value) - 1 ;
+    if (document.getElementById(indexProduct).value <= 0){
+      document.getElementById(indexProduct).value = 0
+    }
 }
 
-function decreaseProduct(){
+function isInCart(productId){
+  let result = cart.some(productoSel => productoSel.id === productId);
+ return result;
+}
+
+function sendMessage(newValue){
+  if (newValue == 0){
+    Swal.fire('Porfavor indicar el número de unidades a ser agregadas.');
+  } 
+  if (newValue == 1){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ha sido agregada 1 unidad al carrito de compra.',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
+  if (newValue > 1){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: `Han sido agregadas ${newValue} unidades al carrito de compra.`,
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
+}
+
+function updateNum(newValue){
+  totalCart = parseInt(totalCart) + parseInt(newValue);
+  document.getElementById("total-productos-mobile").innerHTML = totalCart;
+  sendMessage(newValue);
+}
+
+function addInfo(productId){
+  let newValue = document.getElementById(productId).value;
+  const productSel = productos.find((producto)=> producto.id === productId);
   
+  updateNum(newValue);
+
+  if (newValue > 0){
+      if (isInCart(productId)){
+        cart.forEach((element) => {
+          if (element.id === productId){
+            element.units = parseInt (element.units) + parseInt (newValue);
+            console.log(cart);
+          }} )
+      } else {
+      cart.push({
+        ...productSel,
+        units: newValue,
+      })
+      localStorage.setItem("data",JSON.stringify(cart));
+    }
+  }
+  }
+
+function renderCart(){
+  elemCart.innerHTML = "";
+  if (cart != null){
+  cart.forEach((producto) => {
+       elemCart.innerHTML += 
+    `
+    <div class="crd-product-cart">
+    <div class="img-product-cart" ><img id="img-product-cart" src="${producto.image}" alt="imagen del producto">
+    </div>
+    <div class="box-name-price-x">
+      <p id="txt-name-cart">${producto.title}</p>
+      <p id="txt-price-cart">${producto.price}</p>
+      <button class="btn-plusminus" onclick = "deleteItem(${producto.id})">x</button>
+    </div>
+    <div class="select-quantity">
+        <button class="btn-plusminus" onclick = "decreaseProductCart(${producto.id})">-</button>
+        <input id = "${producto.id}" class ="quantity-products" type="number" value= "${producto.units}" min=0>
+        <button class="btn-plusminus" onclick = "increaseProductCart(${producto.id})">+</button>
+    </div>
+    `
+  }
+)
+localStorage.clear();
+}else{
+  elemCart.innerHTML = "";
+  total.innerHTML = "Total €"
+}
+addTotal();
 }
 
-function addToCart(id){
-  const articulo = productos.find((producto)=> producto.id === id);
-  console.log(articulo);
+function getDataStorage(){
+  cart = JSON.parse(localStorage.getItem("data"));
+  renderCart();
 }
 
-renderProducts();
+function sendMessaDeleteItem(){
+  Swal.fire('El producto será eliminado del carrito.');
+}
+
+function deleteItem(productId){
+  sendMessaDeleteItem();
+  cart = cart.filter(producto => producto.id != productId);
+  renderCart();
+}
+
+function decreaseProductCart(productId){
+  decreaseProduct(productId);
+  cart.forEach((producto) => {
+    if (producto.id == productId){
+      producto.units = document.getElementById(productId).value;
+      if (producto.units == 0){
+        deleteItem(productId);
+      }
+    }
+    addTotal()
+  });
+  }
+
+function increaseProductCart(productId){
+  increaseProduct(productId);
+  cart.forEach((producto) => {
+    if (producto.id == productId){
+      producto.units = document.getElementById(productId).value;
+    }
+    addTotal();
+  });
+}
+
+function addTotal(){
+ totalCart = 0; 
+ cart.forEach((item)=>{
+  totalCart += item.units * item.price; 
+  totalCart = totalCart.toFixed(2);
+ });
+ total.innerHTML = totalCart;
+}
+
+function emptyCart(){
+  cart = null;
+  renderCart();
+}
+
