@@ -1,22 +1,4 @@
 @media screen and (max-width:992px) {
-    .header-desktop{
-        display: none;
-    }
-    #products-desktop{
-        display: none;
-    }
-    #products-cart {
-        display: none;
-    }
-    
-    #crd-product-cart {
-        display: none;
-    }
-
-    #p-destacados {
-        display: none;
-    }
-
     #nav-bar-mobile {
         background-color: var(--light-green);
         display: flex;

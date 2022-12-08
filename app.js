@@ -25,23 +25,7 @@ function renderProducts(){
           </div>
           <div id = "txt-msg-usuario${producto.id}"></div>
       </div>
-        `
-      elemProductsDesk.innerHTML += `
-      <div class="crd-product-desktop">
-            <img id="img-product" src="${producto.image}" alt="${producto.title}">
-            <p id="txt-product-name">${producto.title}</p>
-          <p id="txt-price-mobile">${producto.price}<span> euros</span></p>
-          <p id="txt-price"></p>
-            <div id="btns-add">
-              <button class="btn-plusminus">-</button>
-              <input type="text">
-              <button class="btn-plusminus">+</button>
-              <button class="btn-plusminus">x</button>
-              <button class="btn-action">Añadir al carrito</button>
-              <p id = "txt-msg-usuario">mensaje</p>
-            </div>
-        </div>
-        `
+        `   
     });
 }
 
