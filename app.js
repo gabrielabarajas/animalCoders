@@ -150,9 +150,9 @@ function decreaseProductCart(productId){
       producto.units = document.getElementById(productId).value;
       if (producto.units == 0){
         deleteItem(productId);
-        addTotal();
       }
     }
+    addTotal()
   });
   }
 
@@ -161,8 +161,8 @@ function increaseProductCart(productId){
   cart.forEach((producto) => {
     if (producto.id == productId){
       producto.units = document.getElementById(productId).value;
-      addTotal();
     }
+    addTotal();
   });
 }
 
