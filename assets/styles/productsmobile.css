@@ -1,4 +1,8 @@
 @media screen and (max-width:992px) {
+    header{
+        width: 100%;
+        position:fixed;
+    }
     #nav-bar-mobile {
         background-color: var(--light-green);
         display: flex;
@@ -6,6 +10,7 @@
         justify-content: space-around;
         align-content: center;
         padding: 15px;
+
     }
 
     #img-logo{
